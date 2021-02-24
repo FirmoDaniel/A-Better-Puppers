@@ -1,0 +1,175 @@
+/*------------------------------------------------------------------------------Google Font Import*/
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/*------------------------------------------------------------------------------HEADER*/
+
+header a {
+    border-bottom: none;
+}
+
+
+
+
+/*------------------------------------------------------------------------------FONTS (SIZES / COLOURS / THEMES / BORDERS)*/
+.smallText{
+    font-size: small;
+}
+
+.listItemHighlight{
+    font: red;
+}
+
+body, .container{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+
+/*h2, a{
+    border-bottom: 3px solid #d3ddd7 ;
+
+}*/
+
+.customPurple{
+    background-color: #f75ce8;
+    
+
+}
+
+.customPurpleDark{
+    color:  #63055a;
+    font-weight: 900;
+
+}
+
+.customRed{
+    background-color: #fcbeb3;
+
+}
+
+.pink{
+    color: pink;
+    font-weight: 900;
+}
+
+.blue{
+    color: #051963;
+    font-weight: 900;
+}
+
+.genderOptions, .neuteredOptions, .weightOptions{
+    color: black;
+}
+
+.green{
+    color: green;
+    font-weight: 900;
+}
+
+.red{
+    color: red;
+    font-weight: 900;
+}
+
+
+
+/*------------------------------------------------------------------------------BACKGROUND COLOURS*/
+
+/*body, .container{
+    background: linear-gradient(to right,#00c3ff, #d3ddd7);
+}
+
+.reverseBackground, h3{
+    background: linear-gradient(to left,#00c3ff, #d3ddd7);  
+}*/
+
+
+
+/*------------------------------------------------------------------------------Body Links */
+
+.quickLinks .indexLinks{
+    padding-bottom: 15px;
+}
+
+.blackLink{
+    color: black;
+    border-bottom: none;
+}
+
+/*------------------------------------------------------------------------------STORY LIST ITEMS  */
+
+.wholeStoryListItem:hover{
+    color: blueviolet;
+}
+
+#noDot:hover{
+    color: blueviolet;
+    font-weight: 700;
+}
+
+#noDot{
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------FOOTER */
+
+.footer-items i {
+    display: inline;
+    font-size: 180%;
+    margin: 1%;
+    padding-top:10px;
+    padding-bottom: 10px;  
+}
+
+footer a {
+    border-bottom: none;
+    color: black;
+}
+
+footer{
+    text-align: center;
+}
+
+
+/*------------------------------------------------------------------------------MEDIA QUERIES*/
+
+@media screen and (max-width:450px){
+    #footer span {
+        font-size: 0;
+    }
+
+    i {
+        color: #d3ddd7;
+    }
+
+}
+
+@media screen and (min-width:768px){
+    .scaleDown {
+        height: 70%;
+        width: 70%;
+        
+        
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
