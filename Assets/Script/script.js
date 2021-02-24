@@ -22,7 +22,7 @@ $(document).ready(function(){
 //**************************************** FEEDING GUIDE
     // Global variables
 
-    let gend, neutCheck, proteinNeeds2, dpnString, weightString, givenName, exe2;
+    let gend, neutCheck, proteinNeeds2, dpnString, weightString, givenName, exe2, dpnString2;
 
         // HIDE SHOW TOGGLE
         $("#hide1").hide().delay(500).fadeIn();
@@ -82,9 +82,9 @@ $(document).ready(function(){
         };
 
         if(givenName.length > 0){
-            $("#weightName").text(`How much does `+ givenName + ` weight ? `);
+            $("#weightName").text(`How much does `+ givenName + ` weigh ? `);
         }else{
-            $("#weightName").text(`How much does your puppers weight ? `);
+            $("#weightName").text(`How much does your puppers weigh ? `);
         };
 
         if(givenName.length > 0){
@@ -247,14 +247,14 @@ $(document).on("change", ".weightOptions", function(){
     let proteinNeeds1, etMsg;
     proteinNeeds1 = $(" #weight option:selected").val();
     neutCheck = $(' #neutered option:selected ').attr("id");
-    dpnString= $("#weight2").val().length;
+    dpnString2= $("#weightET").val().length;
     
 
-    if(neutCheck === "yesNeutered" && dpnString > 0 && proteinNeeds1 > 0 ){
+    if(neutCheck === "yesNeutered" && dpnString2 > 0 && proteinNeeds1 > 0 ){
         exe2 = (parseFloat(proteinNeeds1) * .9);
         etMsg = ` (Neutering has decreased excercise by 10% ! )`;
         $("#et").removeClass().addClass("green");
-    }else if(neutCheck === "noNeutered" && dpnString > 0 && proteinNeeds1 > 0 ){
+    }else if(neutCheck === "noNeutered" && dpnString2 > 0 && proteinNeeds1 > 0 ){
         exe2 = parseFloat(proteinNeeds1) ;
         etMsg = ` (Neutering would reduce excercise by 10% ! )`;
         $("#et").removeClass().addClass("red");
@@ -264,7 +264,7 @@ $(document).on("change", ".weightOptions", function(){
         $("#et").removeClass();
     }
 
-    $("#weight2").val( exe2 + ` mins twice per day`);
+    $("#weightET").val( exe2 + ` mins twice per day`);
     $("#et").text(etMsg);
 
 
