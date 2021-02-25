@@ -2,28 +2,32 @@
 
 ## Project aim
 
-The site's puprose is to provide information on general canine health. Be that physical, mental or social. Through a series of responsive questionaires we evalute dietery needs, optimal excercise regimes and appropriate socilaisation requirements.
-The aim is to help onwers learn through simple changes they can make to their pets everyday life. We also offer a wide range of discounted / added-value experiances, equipment and custom programs depending on breed or specific issues. 
+The site's puprose is to provide information on general canine health. Be that physical, mental or social. Through a series of responsive questionaires we evalute dietery needs and optimal excercise duration.
+We also provide 'the four keys' which address the most common mistakes involving socialising a dog.
+The aim is to help onwers learn through simple changes they can make to their pets everyday life. 
+There is a repeated drive for users to visit our socila media pages for further engagement. 
 
 What separates the site from others is our 'Pet First' approach. Above all else our goal is wider awaremness of the simple things we can all do to improve our pet's life. 
 
-our Secondary objective is to grow a community using added value and pulling from external partners to offer a varied range of services to those in need of more than the basic information. 
+Our Secondary objective is to grow a community using added value and pulling from external partners to offer a varied range of services to those in need of more than the basic information. 
 
 A live version can be found [here](https:#)
 
 ## Project Requirements
-1. Design an interactive website with appropriate navigation and structured layout which meets the projects given prupose.
-    * Achieved - VERIFY!
-2. Use custom HTML, CSS, JavaScript/ JQuery and incorpated images to create a site exceeding one page.
-     * Achieved - VERIFY!
-3. All code must pass code validators such as W3C and Jshint.
- * Achieved - VERIFY!
-4. Write JS code that cycles through data and handles incoreect user entires, and store on-trival code in external sources using all applicale readability standards suchs as indentation and comments where needed. 
- * Achieved - VERIFY!
+1. Dynamic Front End Project: Write custom JS, HTML, and CSS code to create a front-end application of more than one page with significant interactive functionality.
+    * Achieved - The site has 5 pages. Index & Socialsation have minor JS, while Excercise and Feeding guide have more substantial interactivity via guides.
+2. Site Responses: Use JS to have the site produce relevant responses dependant on users' actions.
+     * Achieved - Both the feeding guide and excercise guide respond to user input selections from drop downs, and directly from typed input. 
+3. Documentation: Write a README.md file for your project that explains what the project does and the value it provides.
+    * Achieved - Overview of project outline in the 'Project aim' section.
+4. Write JS code that cycles through data and handles incoreect user entires, and store non-trival code in external sources using all applicale readability standards suchs as indentation and comments where needed. 
+ * Achieved - Both guides deploy if/else loops and conditional responses via text messages or class changes depending on user interaction.
 5. Design an implement manual testing with screen shots for verification, and fully document the project's start and end/ fully developed journey using a README.md file. 
  * Achieved - VERIFY!
 6. Deploy finalised version to GitHub with clearly distinguishable comments where external sources were used. 
  * Achieved - VERIFY!
+7. All code must pass code validators such as W3C and Jshint.
+    * Achieved - VERIFY!
 
 
 ## UX
@@ -34,7 +38,7 @@ The website is targeted at pet owners in need of advice and initially directs th
 * Socialsation
 * Excercise
 
-The site offers simple first stepos to tackling each issue and offers increased help if needed via sign ups and FAQ pages.
+The site offers simple first stepos to tackling each issue and offers increased help if needed via social media pages.
 
 The above categories and broekn down further for new or experiance owners, puppy care or second chance warriors adopting their first pet. 
 
@@ -45,16 +49,16 @@ In terms of scope the current site was kept conscise so as not to overwhelm alre
 "My pet is over weight, even though I'm feeding him exactly what his food says I should."
 
 ### Answer: 
-"While the feeding programs on food producer packaging is often helpful it is a guide only, and won;t always suit individual pets's needs. Upon answering some basic questions about your pet we can help with a custom feeding schedule to get him or her back on track."
+"The site provides some simple facts on feeding, and an interactive guide on how much the user's pet's protein needs with a further option to provide food weigh in grams based on the user's current food type."
 
 [Site Response](https:#)
 
 ## User Experinace 2
 ### Question: 
-"My dog is overly agressive towards other dogs, regardless of tehir size, and I'm afarid he'll get himself hurt, or hurt someone else."
+"My dog is overly agressive towards other dogs, regardless of tehir size, and I'm afarid they'll get hurt, or hurt someone else."
 
 ### Answer: 
-"The site aims to explain, in digestible terms, how the canine mind works, and why the dog may be reacting in certain ways. Again we require some basic information, and we push for owners to be honest with us and themselves for the betterment of their furry cxompanion."
+"The site provides 'the four keys' YOUR ARE HERE !!!!!!!"
 
 [Site Response](https:#)
 
