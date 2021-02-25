@@ -243,7 +243,7 @@ $(document).ready(function(){
 //**************************************** EXCERCISE GUIDE
 
 //EXCERCISE TIME
-$(document).on("change", ".weightOptions", function(){
+$(document).on("change", ".weightOptionsET", function(){
     let proteinNeeds1, etMsg;
     proteinNeeds1 = $(" #weight option:selected").val();
     neutCheck = $(' #neutered option:selected ').attr("id");
