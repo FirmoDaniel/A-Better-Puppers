@@ -89,22 +89,22 @@ _Note:_ First draft wireframe pdf’s are included in this project. The main var
 ### The Surface Plane
 Overall the site is responsive and scales with user screen size. 
 
-The site follows a correlating scheme or colours ( )paired with **Black** throughout,
-these colours are inchanged periodically to avoid visual fatigue. 
-
-The lead colurs are accompanied by headers and footers splashed **Pale Green** (#c6e0c1) to naturally border the pages, 
-and a single font is used globally to maintain cohesiveness.
+The site follows a correlating scheme or colours (Custom Purple #f75ce8, Custom Dark Purple #63055a, Cutsom Red #fcbeb3, and some bootstrap basics like primary, info and success classes ).
+These colours are inchanged periodically to avoid visual fatigue. 
 
 ### Existing Features
-* Index : Features a background image repeated throughout. Cards with images from Bootstrap. Quotes which follow a fixed style but vary in text. Info on all [here](#credits). There are links at page end to promt users deeper into the site. 
-* Forty + : Contains a compact list of suggestions based on users selected age group. Page end contains a link to sign up.
-* Forty - : Mirroring the 'Forty +' here we display an altered list of suggestions based on users selected age group. Page end contains a link to sign up.
-* Sign Me Up : we offer a quick and easy sign up, requiring only an email address and confirmation the user has read our disclaimer which is linked in the form. We also provide an optional space to share addition information. Page end contains a link to further information on the 'Things We Like' page.
-* Things We Like : The information is organised into cards with images. Info on all [here](#credits). There is also a minor push to sign up via a link at page top-right.
+* Header : The header's title 'A Better Puppers' is used for a home link throughout. The other navigations collapse when needed on smaller screens so as not to clutter mobile decives. 
+* Index : Presents navigation via four links which entice the eye by utilising bright colours on a white background.  
+* Excercise : Mirroring the pages beyond the index here we display facts for excercise to debunk commonly held beliefs on excercise. It also proivides and interactive guide and a push to social media via footer links.
+* Socialsation: Again the site offers some easily disgestible facts for users in need of help. We also intriduce and explore the 'Four keys' via a hideable list activated by user input.
+* Feeding Guide: Here we explore some misnomers regarding feeding/ diet and present the user with an expandable guide. Interactive and informative while keeping to our succint ethos. 
+* About Us : A willing user can explore the site's creator's own story and reason for being. It comes with images from a personal library as well as redirections back to the site's pages and social medias.
+* Outside of  the 'Index and About Us' pages utilise a combination of hide and fadeIn methods in attempt to allow users take in each line of information rather than an entire page at once.
 * Footer : Links provided to fictional social medias.
 
 ### Features left to implement 
-* Sign Me Up: We would like to allow users sign up in full on this page by implementing some back-end structure and incorporating a secure direct payment method.
+* A large form which encompasses diet, excercise and some socialisation tricks which would take longer to fill out but may yield better user results. 
+* An email API to send users guide results, or construct a schedule for users to follow as they implement their newly aquired knowledge.
 
 ## Technologies used
 * HTML-For basic structure.
@@ -126,86 +126,67 @@ and a single font is used globally to maintain cohesiveness.
 ## Testing
 ### Links
 #### Manual Testing
-* Index links
-    * At 'Index' page end two links are presented in buttom-form.  
-        * I'm over 40
-        * I'm under 40
-    * _Both links when selected lead to the assigned pages._
+* Header Links
+    *  Header links are housed in a BootStrap Nav Collasable Bar on each page.
+        *  A Better Puppers (home button) is in-active on the index page only. 
+        *  Excercise Guide
+        *  Socialsation (The Four Keys)
+        *  Feeding Guide
+        *  About Us
+    * _All links when selected lead to the assigned pages._
 
-* Over 40 links
-    * At 'Over Forty' page end one link is presented in button-form.
-        * I'm Ready to Start
-    * _The link when selected navigates the user to the 'Sign Me Up' page._
+* Footer Links
+    *  Footer links are house in a Bootstrap Container to ensure correct sizing. Font size is set to zero using media queries so the footer remains neat on small screens.
+        *  FaceBook 
+        *  Twitter
+        *  Instagram
+        *  Donate
+    * _All links open in a new tab as expected._
 
-* Under 40 links
-    * At 'Under Forty' page end one link is presented in button-form.
-        * I'm Ready to Start
-    * _The link when selected navigates the user to the 'Sign Me Up' page._
+* Index Page
+    * Contains four internal links mirroring the options available from the navigation bar.
+        *  Diet
+        *  Excercise
+        *  Socialsation
+        *  About Us
+    * _The links when selected navigates the user to the intended pages._
 
-* Sign Me Up links
-    * At 'Sign Me Up' page bottom two links are presented in text-form.
-        * 'disclaimer' housed within the form
-        * 'Things We Like' 
-    * _'disclaimer' link when selected navigates the user to sample pdf on a new tab._
-    * _'Things We Like' link when selected navigates the user to the 'Things We Like' page._
-
-* Things we links
-    * At 'Things We Like' page top one link is presented in text-form.
-        * 'signed up!'
-    * _The link when selected navigates to the 'Sign Me Up Page' page._
-    * At 'Things We Like' page body there are twelve cards each with external links divided  evenly among three sections. (1)Asset-types we like. (2)Exchanges&Providers we like. (3)People we like.
-        * Asset-types we like 'Show me more!'
-            * ETF's
-            * Bonds
-            * Dividend Aristocrats 
-            * Crypto Currencies
-        * _Each link when selected diverts the user to an external wikipedia address in a new tab._
-         * Exchanges&Providers we like 'Take me there!'
-            * Kraken
-            * Mintos
-            * Degiro
-            * MoneyCube
-        * _Each link when selected diverts the user to the intended provider's homepage an external in a new tab._       
-         * People we like 'Tell me more!'
-            * J.L. Collins
-            * The Joseph Carlson Show
-            * Dave Ramsey
-            * Paddy Delaney's Informed Decisions
-        * _Each link when selected diverts the user to the intended person's homepage an external in a new tab._ 
-### Forms
+  
+### Guides / Forms
 #### Manual Testing
-* Sign Me Up form
-    * At 'Sign Me Up' page bottom one form is presented with four components.
-
-Component 1 | Component 2 | Component 3 | Component 4 |
-------------- | --------- | ----------- | ----------- |
-Email address | Optional Addition Information | checkbox with link to disclaimer | Button to submit |
-Requires a '@' within the email address | optional | Checkbox is required | Two requirements needed before subbmission |
-
-**Upon accepted submission** wherein the following criteria are met.
-* Email has '@'
-* Checkbox is ticked
-
-The form clears it's contents.
-
-**Upon failed submission** wherein one of the two requirements are not met.
-1. Where the email is blank or doe not contain '@' the user is prompted.
-![Email-Test](screenshots/test-email.png)
-2. Where the email is correct but the checkbox remains un-checked the user is prompted.
-![Email-Test](screenshots/test-checkbox.png)
+* Guides / Forms are found on both the Excercise Guide page and the Feeding Guide page. 
+    * Exercise Guide
+        * The Gender, and Neutered inputs are optional, though both create gender based messages when selected.
+        * For Example 'Oh who's a good boy !' if male is selected. (Text color changes via Add,Class methods based on gender)
+        * A selected Gender also shows a hidden input requesting the pet's name. Once populated the following questions are populated with the inputted name.
+        * If a Neutered option is selected it creates two messages (colored again depending on selection)
+        * The first appears under the Neutered option. The second appears only once a weight option is selected.
+        * The weight input is required for any output in the final line. Upon selection it populates the final output with a custom response based on input in the form of minutes per day.
+        * Resseting Gender and Neutered to the 'make selection' options removes generated messages and the name option input box, but does not clear any previously inputted name.
+        * Bug: although the name option box is marked for 'text' it is accepting numbers inputted by the user. 
+        * The Neutered option also influences the Final output by reducing the minutes needed by 10%. A message further conveys this ot the user. 
+    * Feeding Guide
+        * As with the excercise guide both Gender and Neutered options are not required for calculations, but both create custom messages, while only gender may influence the final output by 10% up or down.
+        * Upon gender selction a new input is shown which requests the pet's name, this input is then used to customise the following questions.
+        * The weight option is required for Daily Protein needs output to user.
+        * Food bag size, and current protein range, as well as weight, are both required to populate the Final output.
+        * populating just bag size, or just protein range, or both will not generate any output. A weight selection is needed. 
+        * populating a weight selction, and either bag size OR protein range will not generate a final output. 
+    * Given the small number of options on both guides there are no prompts to users to populate all selections. 
 
 ### Responsiveness
 #### Screen sizes
 I used Google Chrome's Responsive Viewer found [here](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb).
 The following are exerts from three tests.
-##### Test @ 300 x 567 
-![300*576](screenshots/300x576.png)
 
 ##### Test @ 320 x 635
-![320*635](screenshots/320x635.png)
+![300*576](Assets/Images/screenshots/300x576.png)
+
+##### Test @ 320 x 635
+![320*635](Assets/Images/screenshots/320x635.png)
 
 ##### Test @ 1024 x 800
-![1024*800](screenshots/1024x800.png)
+![1024*800](Assets/Images/screenshots/1024x800.png)
 
 ### Performance
 #### Lighthouse tests - Mobile
