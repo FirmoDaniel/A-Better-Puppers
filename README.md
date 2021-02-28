@@ -5,7 +5,7 @@
 The site's puprose is to provide information on general canine health. Be that physical, mental or social. Through a series of responsive questionaires we evalute dietery needs and optimal excercise duration.
 We also provide 'the four keys' which address the most common mistakes involving socialising a dog.
 The aim is to help onwers learn through simple changes they can make to their pets everyday life. 
-There is a repeated drive for users to visit our socila media pages for further engagement. 
+There is a repeated drive for users to visit our social media pages for further engagement. 
 
 What separates the site from others is our 'Pet First' approach. Above all else our goal is wider awaremness of the simple things we can all do to improve our pet's life. 
 
@@ -94,7 +94,7 @@ These colours are inchanged periodically to avoid visual fatigue.
 
 ### Existing Features
 * Header : The header's title 'A Better Puppers' is used for a home link throughout. The other navigations collapse when needed on smaller screens so as not to clutter mobile decives. 
-* Index : Presents navigation via four links which entice the eye by utilising bright colours on a white background.  
+* Index : Presents navigation via four links which entice the eye by utilising bright colours on a white background. The welcome message changes depending on the time of the day.  
 * Excercise : Mirroring the pages beyond the index here we display facts for excercise to debunk commonly held beliefs on excercise. It also proivides and interactive guide and a push to social media via footer links.
 * Socialsation: Again the site offers some easily disgestible facts for users in need of help. We also intriduce and explore the 'Four keys' via a hideable list activated by user input.
 * Feeding Guide: Here we explore some misnomers regarding feeding/ diet and present the user with an expandable guide. Interactive and informative while keeping to our succint ethos. 
@@ -104,24 +104,23 @@ These colours are inchanged periodically to avoid visual fatigue.
 
 ### Features left to implement 
 * A large form which encompasses diet, excercise and some socialisation tricks which would take longer to fill out but may yield better user results. 
-* An email API to send users guide results, or construct a schedule for users to follow as they implement their newly aquired knowledge.
+* An email API to send users guide results, or construct a schedule for users to follow as they implement their newly acquired knowledge.
 
 ## Technologies used
 * HTML-For basic structure.
 * CSS-For styling and required Media Query outside of Bootstrap.
 * [JavaScriprt]() 
-* [Jquery]()
+* [Jquery](https://jquery.com/)
 * [W3C validator](https://validator.w3.org/)-Used in testing HTML and CSS.
 * [JsHINT]()-used for Java Script validation.
 * [GitHub](https://github.com) -For deployment.
 * [GitPod](https://www.gitpod.io/) -IDE.
-* [Bootstrap (including JQuery)](https://getbootstrap.com) -Utilized for responsiveness via columns, forms and buttons.
-* [Font Awesome](https://fontawesome.com) -Used for all icons.
-* [Google Fonts](https://fonts.google.com) -Used for primary font employed throughout. [PlayFair Display](https://fonts.google.com/specimen/Playfair+Display?query=playfair).
+* [Bootstrap (including JQuery)](https://getbootstrap.com) -Utilized for responsiveness via columns, buttons and navbars.
+* [Google Fonts](https://fonts.google.com) -Used for primary font employed throughout. [Lato]('https://fonts.googleapis.com/css2?family=Lato&display=swap').
 * [Visual Studio](https://code.visualstudio.com) -For offline work.
 * Google Chrome's Responsive Viewer found [here](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb)
 * [ImageMagick](https://imagemagick.org/index.php) -Used for resizing images after initial Lighthouse test on mobile.
-* Google Chrome's lighthouse function.![Lighthouse](screenshots/lighthouse.png)
+* Google Chrome's lighthouse function.![Lighthouse]
 
 ## Testing
 ### Links
@@ -192,23 +191,20 @@ The following are exerts from three tests.
 #### Lighthouse tests - Mobile
 
 ##### Lighthouse Initial mobile test highlighted issues such as:
-* Oversized cards.
+* Meta names needed updating for SEO
 * Duplicate Bootstrap links.
 * Missing labels in footer icons
-![Mobile first run](screenshots/mobile-first-run.png)
 
-##### Using Image Magick I reduced the sizes by 50%. Also corrected the duplicate links and footer icons.
-![Mobile final run](screenshots/mobile-final-run.png)
 
-##### Lighthouse Mobile overall results 
+##### Lighthouse overall results 
 
-| Page  | Overall  | Performance  | Accessibility  | Best Practise  | Seo |
-|---|---|---|---|---|---|
-| Index  | 90  | 86  | 95  | 86  | 92  |
-|  Over 40 | 90  | 81  | 95  | 93  | 91  |
-| Under 40  | 93  | 92  | 95  | 93  | 91  |
-| Sign me Up  | 91  | 84  | 97  | 93  | 91  |
-| Things we Like  | 89  | 90  | 95  | 79  | 92  |
+| Page    | Performance  | Accessibility  | Best Practise  | Seo |
+|---|---|---|---|---|
+| Index  | 99  | 96  | 100  | 89  |
+| Exercise Guide| 99  | 96  | 100  | 89  |
+| Socialsation | 93  | 92  | 95  | 93  |
+| Feeding Guide | 98  | 96  | 100  | 89  |
+| About Us | 96  | 97  | 100  | 90 |
 
 #### Lighthouse tests - Desktop
 

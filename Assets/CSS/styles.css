@@ -7,9 +7,6 @@ header a {
     border-bottom: none;
 }
 
-
-
-
 /*------------------------------------------------------------------------------FONTS (SIZES / COLOURS / THEMES / BORDERS)*/
 .smallText{
     font-size: small;
@@ -24,27 +21,17 @@ body, .container{
     font-weight: 300;
 }
 
-
-/*h2, a{
-    border-bottom: 3px solid #d3ddd7 ;
-
-}*/
-
 .customPurple{
     background-color: #f75ce8;
-    
-
 }
 
 .customPurpleDark{
     color:  #63055a;
     font-weight: 900;
-
 }
 
 .customRed{
     background-color: #fcbeb3;
-
 }
 
 .pink{
@@ -71,20 +58,6 @@ body, .container{
     font-weight: 900;
 }
 
-
-
-/*------------------------------------------------------------------------------BACKGROUND COLOURS*/
-
-/*body, .container{
-    background: linear-gradient(to right,#00c3ff, #d3ddd7);
-}
-
-.reverseBackground, h3{
-    background: linear-gradient(to left,#00c3ff, #d3ddd7);  
-}*/
-
-
-
 /*------------------------------------------------------------------------------Body Links */
 
 .quickLinks .indexLinks{
@@ -95,28 +68,6 @@ body, .container{
     color: black;
     border-bottom: none;
 }
-
-/*------------------------------------------------------------------------------STORY LIST ITEMS  */
-
-.wholeStoryListItem:hover{
-    color: blueviolet;
-}
-
-#noDot:hover{
-    color: blueviolet;
-    font-weight: 700;
-}
-
-#noDot{
-    list-style-type: none;
-}
-
-
-
-
-
-
-
 
 /*------------------------------------------------------------------------------FOOTER */
 
