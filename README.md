@@ -55,19 +55,19 @@ In terms of scope the current site was kept conscise so as not to overwhelm alre
 
 ## User Experinace 2
 ### Question: 
-"My dog is overly agressive towards other dogs, regardless of tehir size, and I'm afarid they'll get hurt, or hurt someone else."
+"My dog is overly agressive towards other dogs, regardless of their size, and I'm afarid they'll get hurt, or hurt someone else."
 
 ### Answer: 
-"The site provides 'the four keys' YOUR ARE HERE !!!!!!!"
+"The site provides 'the four keys' to help with socialising your pet." The link for socialsation is displayed clearly on the landing page. 
 
 [Site Response](https:#)
 
 ## User Experiance 3
 ### Question: 
-"I walk my dog everyday but she still has boundless energy, and when I leave her alone she destroys furniture and anythign else she can get a hold of."
+"I walk my dog everyday but they still have boundless energy, and when I leave them alone they destroy furniture and anythign else they can get a hold of."
 
 ### Answer:
-"The site allows users to descibe their walking habbits, lenght, on/off leash, time of daye and what all that could mean. Again we rely on, and implore the user for, honesty. Using custom caluations we can get the owner on the right track and where extra help is required we have options available for house calls or custom tutorship from a real expert."
+"The site provides information on exercise utilising a list of facts, a snippet of our own experiance and a quick, helpful guide to demonstrate how long a dog should be walked based on some user inputs."
 
 [Site Response](https:#)
 
@@ -89,7 +89,7 @@ _Note:_ First draft wireframe pdf’s are included in this project. The main var
 ### The Surface Plane
 Overall the site is responsive and scales with user screen size. 
 
-The site follows a succinct colour theme of **Orange** (#ff4800c5) paired with **Black** throughout,
+The site follows a correlating scheme or colours ( )paired with **Black** throughout,
 these colours are inchanged periodically to avoid visual fatigue. 
 
 The lead colurs are accompanied by headers and footers splashed **Pale Green** (#c6e0c1) to naturally border the pages, 
