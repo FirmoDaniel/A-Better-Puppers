@@ -22,7 +22,7 @@ $(document).ready(function(){
 //**************************************** FEEDING GUIDE
     // Global variables
 
-    let gend, neutCheck, proteinNeeds2, dpnString, weightString, givenName, exe2, dpnString2;
+    let gend, neutCheck, proteinNeeds2, dpnString, weightString, exe2, dpnString2;
 
         // HIDE SHOW TOGGLE
         $("#hide1").hide().delay(500).fadeIn();
@@ -160,16 +160,12 @@ $(document).ready(function(){
         }
         $("#neuteredMsg").text(neutmsg);
 
-
     });
 
-
-    // WEIGHT SCRIPT
+    // WEIGHT SCRIPT 1
     $(document).on( "change", '.weightOptions', function(){
     let wtmsg;
     weig =$(' #weight option:selected ').attr("id");
-
-
 
     if(weig === "noChoiceWeight"){
         wtmsg = " "
@@ -217,7 +213,6 @@ $(document).ready(function(){
 
         $("#weight2").val( proteinNeeds2 + ` %`);
         $("#dpn").text(dpnMsg);
-
 
     });
     
@@ -267,11 +262,6 @@ $(document).on("change", ".weightOptionsET", function(){
     $("#weightET").val( exe2 + ` mins twice per day`);
     $("#et").text(etMsg);
 
-
 });
-
-
-
-
 
 });

@@ -118,6 +118,7 @@ These colours are inchanged periodically to avoid visual fatigue.
 * [Bootstrap (including JQuery)](https://getbootstrap.com) -Utilized for responsiveness via columns, buttons and navbars.
 * [Google Fonts](https://fonts.google.com) -Used for primary font employed throughout. [Lato]('https://fonts.googleapis.com/css2?family=Lato&display=swap').
 * [Visual Studio](https://code.visualstudio.com) -For offline work.
+* [Font Awesome](https://fontawesome.com/)  - For icons.
 * Google Chrome's Responsive Viewer found [here](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb)
 * [ImageMagick](https://imagemagick.org/index.php) -Used for resizing images after initial Lighthouse test on mobile.
 * Google Chrome's lighthouse function.![Lighthouse]
@@ -188,14 +189,6 @@ The following are exerts from three tests.
 ![1024*800](Assets/Images/screenshots/1024x800.png)
 
 ### Performance
-#### Lighthouse tests - Mobile
-
-##### Lighthouse Initial mobile test highlighted issues such as:
-* Meta names needed updating for SEO
-* Duplicate Bootstrap links.
-* Missing labels in footer icons
-
-
 ##### Lighthouse overall results 
 
 | Page    | Performance  | Accessibility  | Best Practise  | Seo |
@@ -205,21 +198,6 @@ The following are exerts from three tests.
 | Socialsation | 93  | 92  | 95  | 93  |
 | Feeding Guide | 98  | 96  | 100  | 89  |
 | About Us | 96  | 97  | 100  | 90 |
-
-#### Lighthouse tests - Desktop
-
-##### Lighthouse desktop.
-![Desktop Run](screenshots/desktop-run.png)
-
-##### Lighthouse Desktop overall results 
-
-| Page  | Overall  | Performance  | Accessibility  | Best Practise  | Seo |
-|---|---|---|---|---|---|
-| Index  | 90  | 92  | 93  | 86  | 90  |
-|  Over 40 | 93  | 98  | 92  | 93  | 89  |
-| Under 40  | 93  | 96  | 92  | 93  | 89  |
-| Sign me Up  | 94  | 96  | 97  | 93  | 89  |
-| Things we Like  | 91  | 96  | 93  | 86  | 90  |
 
 _Note_: Lighthouse proposed other fixes but most were beyond my capability. 
 

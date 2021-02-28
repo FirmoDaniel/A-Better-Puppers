@@ -1,25 +1,8 @@
 /*------------------------------------------------------------------------------Google Font Import*/
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-/*------------------------------------------------------------------------------HEADER*/
-
-header a {
-    border-bottom: none;
-}
 
 /*------------------------------------------------------------------------------FONTS (SIZES / COLOURS / THEMES / BORDERS)*/
-.smallText{
-    font-size: small;
-}
-
-.listItemHighlight{
-    font: red;
-}
-
-body, .container{
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-}
 
 .customPurple{
     background-color: #f75ce8;
@@ -44,9 +27,6 @@ body, .container{
     font-weight: 900;
 }
 
-.genderOptions, .neuteredOptions, .weightOptions{
-    color: black;
-}
 
 .green{
     color: green;
@@ -56,17 +36,6 @@ body, .container{
 .red{
     color: red;
     font-weight: 900;
-}
-
-/*------------------------------------------------------------------------------Body Links */
-
-.quickLinks .indexLinks{
-    padding-bottom: 15px;
-}
-
-.blackLink{
-    color: black;
-    border-bottom: none;
 }
 
 /*------------------------------------------------------------------------------FOOTER */
@@ -109,8 +78,6 @@ footer{
         
         
     }
-
-
 }
 
 
