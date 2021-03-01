@@ -116,8 +116,7 @@ These colours are inchanged periodically to avoid visual fatigue.
 * [Visual Studio](https://code.visualstudio.com) -For offline work.
 * [Font Awesome](https://fontawesome.com/)  - For icons.
 * Google Chrome's Responsive Viewer found [here](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb)
-* [ImageMagick](https://imagemagick.org/index.php) -Used for resizing images after initial Lighthouse test on mobile.
-* Google Chrome's lighthouse function.![Lighthouse]
+* Google Chrome's lighthouse function.
 
 ## Testing
 ### Links
@@ -220,23 +219,20 @@ Using [JShint](https://jshint.com)
 
 ## Deployment
 The project was developed using [GitPod](https://www.gitpod.io/) workspace, committed to git and pushed to [GitHub](https://github.com) using the built in function within Gitpod.
-To deploy this page from the [GitHub respository](https://github.com/FirmoDaniel/MS1-HELP-TO-GROW), the following steps were taken.
+To deploy this page from the [GitHub respository](https://github.com/FirmoDaniel/A-Better-Puppers), the following steps were taken.
 1. Log in to **GitHub**.
-2. From the list of repositories on screen select 'MS1-HELP-TO-GROW'
-![Deployment-Repository](screenshots/dep-repo.png)
+2. From the list of repositories on screen select 'A-Better-Puppers'.
 3. Select **Settings** from the menu.
 4. Scroll down to **GitHub Pages**
-![Deployment-GitHub-Pages](screenshots/dep-pages.png)
 5. Under **Source** click the dropdown menu labelled **none** and select the **Master Branch**.
 6. On selecting **Master Branch** the is automatically refreshed, the website is now deployed.
-7. A link can be found in the **GitHub pages section**, and also in the about section within **MS1-HELP-TO-GROW**.
-![Deployment-About](screenshots/dep-about.png)
-8. [Link to site](https://firmodaniel.github.io/MS1-HELP-TO-GROW/)
+7. A link can be found in the **GitHub pages section**, and also in the about section within **A-Better-Puppers**.
+8. [Link to site](https://firmodaniel.github.io/A-Better-Puppers/)
 
 ### Cloning
-1. Go to GitHub Repository: [Help To Grow](https://firmodaniel.github.io/MS1-HELP-TO-GROW/)
+1. Go to GitHub Repository: [A-Better-Puppers](https://github.com/FirmoDaniel/A-Better-Puppers)
 2. Select 'Code' dropdown button (next to green 'gitpod' button).
-3. These are your three options ![Clone-Options](screenshots/clone-options.png)
+3. These are your three options **Clone-Options**.
 
     * Copy the URL to your local IDE such as [Visual Studio](https://code.visualstudio.com).
     * Intsall [GitHub desktop](https://desktop.github.com/).
