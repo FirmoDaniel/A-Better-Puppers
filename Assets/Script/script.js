@@ -38,7 +38,7 @@ $(document).ready(function(){
             $("#exeFinalMsg").show();
         }else{
             $("#exeFinalMsg").hide();
-        };
+        }
     
     
         $("#guide").hide();
@@ -61,48 +61,48 @@ $(document).ready(function(){
             $("#basedOnInputsoFar").text(`Based on your input so far, `+ givenName +`'s daily protein needs are : `);
         }else{
             $("#basedOnInputsoFar").text(`Base on your input so far, your pupper's daily protein needs are : `);
-        };
+        }
 
         if(givenName.length > 0){
             $("#etInputSoFar").text(`Using your input so far, `+ givenName +`'s daily excercise needs are :`);
         }else{
             $("#etInputSoFar").text(`Using your input so far, your pupper's daily excercise needs are :`);
-        };
+        }
 
         if(givenName.length > 0){
             $("#neuteredGivenName").text(`Is `+ givenName + ` neutered ? `);
         }else{
             $("#neuteredGivenName").text(`Is your Puppers neutered ? `);
-        };
+        }
 
         if(givenName.length > 0){
             $("#givenNameFinal").text(`Looks like `+ givenName + ` will need : `);
         }else{
             $("#givenNameFinal").text(`Looks your puppers will need : `);
-        };
+        }
 
         if(givenName.length > 0){
             $("#weightName").text(`How much does `+ givenName + ` weigh ? `);
         }else{
             $("#weightName").text(`How much does your puppers weigh ? `);
-        };
+        }
 
         if(givenName.length > 0){
             $("#bagName").text(`How big is `+ givenName + `'s' food bag ? `);
         }else{
             $("#bagName").text(`How big is your pupper's food bag ? `);
-        };
+        }
 
         if(givenName.length > 0){
             $("#proteinRangeName").text(`What's the protein range of `+ givenName + `'s' food ? `);
         }else{
             $("#ProteinRangeName").text(`What's the protein range of your pupper's food ? `);
-        };
+        }
         if(givenName.length > 0){
             $("#onOff").text(`Is `+ givenName + ` walked on or off leash ? `);
         }else{
             $("#onOff").text(`Is your puppers walked on or off leash ? `);
-        };
+        }
     }); 
 
     // GENDER SCRIPT
@@ -118,12 +118,12 @@ $(document).ready(function(){
             gendmsg = "Oh who's a good boy !";
             $("#genderMsg").removeClass().addClass("blue");
             $("#hideShowGender").show();
-            $("#pNameQuestion").text("What's his name ?")
+            $("#pNameQuestion").text("What's his name ?");
         } else if (gend === "female"){
             gendmsg = "Oh who's a good girl !";
             $("#genderMsg").removeClass().addClass("customPurpleDark");
             $("#hideShowGender").show();
-            $("#pNameQuestion").text("What's her name ?")
+            $("#pNameQuestion").text("What's her name ?");
         }else { 
             gendmsg = "Not working ";           
         }
@@ -134,14 +134,14 @@ $(document).ready(function(){
 
     //NEUTERED SCRIPT
     $(document).on( "change", '.neuteredOptions', function(){
-        let neutmsg;
+        let neutmsg, neut;
         neut =$(' #neutered option:selected ').attr("id");
         gend =$(' #gender option:selected ').attr("id");
-        /*let givenName = $("#pName").val();*/
+        
         
         if(neut === "noChoiceNeutered"){
-        neutmsg = " "
-        $("#neuteredMsg").removeClass().addClass("neuteredOptions")
+        neutmsg = " ";
+        $("#neuteredMsg").removeClass().addClass("neuteredOptions");
         } else if(neut === "yesNeutered" && gend === "male"){
             neutmsg = `It's much healthier for him.`;
             $("#neuteredMsg").removeClass().addClass("blue");
@@ -164,12 +164,12 @@ $(document).ready(function(){
 
     // WEIGHT SCRIPT 1
     $(document).on( "change", '.weightOptions', function(){
-    let wtmsg;
+    let wtmsg, weig;
     weig =$(' #weight option:selected ').attr("id");
 
     if(weig === "noChoiceWeight"){
-        wtmsg = " "
-    $("#weightmsg").removeClass().addClass("weightOptions")
+        wtmsg = " ";
+    $("#weightmsg").removeClass().addClass("weightOptions");
     } else if(weig === "small"){
         wtmsg = "Such a little puppers !";
         $("#weightmsg").removeClass().addClass("blue");
@@ -183,7 +183,7 @@ $(document).ready(function(){
         wtmsg = "You've got a bear on your hands !";
         $("#weightmsg").removeClass().addClass("green");
     }else { 
-        wtmsg = "not working"        
+        wtmsg = "not working";       
     }
     $("#weightmsg").text(wtmsg);
 
@@ -195,7 +195,7 @@ $(document).ready(function(){
         proteinNeeds1 = $(" #weight option:selected").val();
         neutCheck = $(' #neutered option:selected ').attr("id");
         dpnString= $("#weight2").val().length;
-        /* let givenName = $("#pName").val(); */
+        
 
         if(neutCheck === "yesNeutered" && dpnString > 0 && proteinNeeds1 > 0 ){
             proteinNeeds2 = (parseFloat(proteinNeeds1) * .9);
@@ -206,7 +206,7 @@ $(document).ready(function(){
             dpnMsg = ` (Neutering would reduce food by 10% ! )`;
             $("#dpn").removeClass().addClass("red");
         }else{
-            proteinNeeds2 = parseFloat(proteinNeeds1)
+            proteinNeeds2 = parseFloat(proteinNeeds1);
             dpnMsg = " ";
             $("#dpn").removeClass();
         }
@@ -221,7 +221,7 @@ $(document).ready(function(){
         let bag, protein, needsTotal, needsTotalMsg;
         bag = $("#weight3 option:selected").val();
         protein = $("#weight4 option:selected").val();
-        needsTotalMsg = " grams of your food brand per day"
+        needsTotalMsg = " grams of your food brand per day";
         dpnString= $("#weight2").val().length;
         weightString =$(' #weight option:selected ').val();
         
@@ -254,7 +254,7 @@ $(document).on("change", ".weightOptionsET", function(){
         etMsg = ` (Neutering would reduce excercise by 10% ! )`;
         $("#et").removeClass().addClass("red");
     }else{
-        exe2 = parseFloat(proteinNeeds1)
+        exe2 = parseFloat(proteinNeeds1);
         etMsg = " ";
         $("#et").removeClass();
     }

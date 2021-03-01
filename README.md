@@ -76,14 +76,10 @@ In terms of scope the current site was kept conscise so as not to overwhelm alre
 In keeping with the uncomplicated approach agreed upon in our Scope plane, the initial wireframes were created
 with consistency in mind so each advancing page's style follows the previous.
 
-_Note:_ First draft wireframe pdf’s are included in this project. The main variation from which was the addition of mirroring cards to both the 'index' and 'things we like' pages in keeping with our Structure & Skeleton planes ideals.
+
+* [WireFrame Overview](Assets/Images/wireframes/wireframe.pdf)
 
 
-* [index](wireframe/wireframe-index-first-draft.pdf)
-* [over-forty](wireframe/wireframe-over-forty-first-draft.pdf)
-* [under-forty](wireframe/wireframe-under-forty-first-draft.pdf)
-* [sign-me-up](wireframe/wireframe-sign-me-up-first-draft.pdf)
-* [things-we-like](wireframe/wireframe-things-we-like-first-draft.pdf)
 
 ## Features
 ### The Surface Plane
@@ -112,7 +108,7 @@ These colours are inchanged periodically to avoid visual fatigue.
 * [JavaScriprt]() 
 * [Jquery](https://jquery.com/)
 * [W3C validator](https://validator.w3.org/)-Used in testing HTML and CSS.
-* [JsHINT]()-used for Java Script validation.
+* [JsHINT](https://jshint.com)-Used for Java Script validation.
 * [GitHub](https://github.com) -For deployment.
 * [GitPod](https://www.gitpod.io/) -IDE.
 * [Bootstrap (including JQuery)](https://getbootstrap.com) -Utilized for responsiveness via columns, buttons and navbars.
@@ -218,6 +214,10 @@ Using [W3C validator](https://validator.w3.org/) both HTML and CSS were checked 
     </a>
 </p>
 
+Using [JShint](https://jshint.com)
+* First run showed 51 warnings
+* Second run showed 46 warnings relating to the use of 'let' to declare variables and the use of template literal's for older versions. The script was not amended to address these, as I wasn't sure how relevant the warnings were.
+
 ## Deployment
 The project was developed using [GitPod](https://www.gitpod.io/) workspace, committed to git and pushed to [GitHub](https://github.com) using the built in function within Gitpod.
 To deploy this page from the [GitHub respository](https://github.com/FirmoDaniel/MS1-HELP-TO-GROW), the following steps were taken.
@@ -244,32 +244,12 @@ To deploy this page from the [GitHub respository](https://github.com/FirmoDaniel
 
 ## Credits
 ### Content
-Header quotes taken from google search results of ‘Financial Quotes’
-### README
-Structure taken from [Code Intsitute webinar](http://bit.ly/devlabs_README_anna) 
+* Some text was taken from the following sites
+    * [link for exercise text](https://jetpetresort.com/blog/dog-care/the-importance-of-exercising-your-dog/#:~:text=Exercising%20keeps%20your%20dog%20healthy,you%20and%20in%20their%20environment.)
+    * [Link for Socilaisation text](https://www.reedanimalhospital.com/the-benefits-of-socializing-your-dog/#:~:text=Socializing%20teaches%20your%20dog%20how,both%20you%20and%20your%20dog.)
+    * [Link for diet text](https://pets.webmd.com/dogs/guide/diet-nutrition)
+
 ### Media
-* Background image [Sapling in jar of coins](https://images.unsplash.com/photo-1579621970590-9d624316904b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80)
-* Card images- 'Index' page.
-    * [People-Whiteboard](https://images.unsplash.com/photo-1532622785990-d2c36a76f5a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80)
-    * [Pen-Paper-Chart](https://images.unsplash.com/photo-1543286386-2e659306cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80)
-    * [People-Talking](https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80)
-    * [Money](https://images.unsplash.com/photo-1589556763393-59ab0f56b811?ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80)
-    * [Yes](https://images.unsplash.com/photo-1560174971-443de64be852?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80)
-    * [Meeting](https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80)
-* Card images - 'Things we like' page.
-    * [ETF image](https://thumbs.dreamstime.com/z/etf-exchange-traded-funds-concept-table-keywords-letters-icons-colored-flat-vector-illustration-white-etf-exchange-119009035.jpg)
-    * [Bond image](https://www.investmentz.com/images/bond.png)
-    * [Dividend Aristocrat image](https://www.allincomestream.com/wp-content/uploads/2020/04/dividend_aristocrats.png)
-    * [Cryptocurrency image](https://i.pinimg.com/originals/4c/62/f5/4c62f589819458c32785ec9f2d69c026.jpg)
-    * [Kraken image](https://themerkle.com/wp-content/uploads-new/2016/01/0WWCVDaH_400x400.png)
-    * [Mintos image](https://3.bp.blogspot.com/-k5CiR2IQKG8/W4mpwPzi_uI/AAAAAAAAAGs/-fAFHT4zpqotg_Hz9fOicygrGiWNN--5ACLcBGAs/s640/Mintos_logo_1000px.png)
-    * [Degiro image](https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Degiro.jpg/1200px-Degiro.jpg)
-    * [MoneyCube image](https://i-invdn-com.akamaized.net/companies_logos/125067_1550587261.png)
-    * [J.L. Collins image](https://the7circles.uk/wp-content/uploads/2016/06/Simple-Path-to-Wealth.jpg)
-    * [Joseph Carlson image](https://cdn.podimo.com/images/02b1091b-7ec6-4812-b6b5-391bd091767f_400x400.png)
-    * [Dave Ramsey image](https://pbs.twimg.com/profile_images/378800000250594141/8479b63c02b71130a03e218ae805ce85_400x400.png)
-    * [Paddy Delaney image](https://ssl-static.libsyn.com/p/assets/a/6/a/3/a6a32c57b3d5361b/New_Podcast_Art_image.jpg)
-### Acknowledgements 
-I received inspiration for this project from Code Institute -Love Running- tutorial, which is why I opted for background images behind the header quotes, and a neat footer.
+* All images were taken from personal library.
 
 
