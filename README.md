@@ -11,7 +11,7 @@ What separates the site from others is our 'Pet First' approach. Above all else 
 
 Our Secondary objective is to grow a community using added value and pulling from external partners to offer a varied range of services to those in need of more than the basic information. 
 
-A live version can be found [here](https:#)
+A live version can be found [here](https://firmodaniel.github.io/A-Better-Puppers/)
 
 ## Project Requirements
 1. Dynamic Front End Project: Write custom JS, HTML, and CSS code to create a front-end application of more than one page with significant interactive functionality.
@@ -51,7 +51,7 @@ In terms of scope the current site was kept conscise so as not to overwhelm alre
 ### Answer: 
 "The site provides some simple facts on feeding, and an interactive guide on how much the user's pet's protein needs with a further option to provide food weigh in grams based on the user's current food type."
 
-[Site Response](https:#)
+[Site Response](https:https://firmodaniel.github.io/A-Better-Puppers/feedingGuide.html)
 
 ## User Experinace 2
 ### Question: 
