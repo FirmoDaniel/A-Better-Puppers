@@ -23,24 +23,22 @@ A live version can be found [here](https://firmodaniel.github.io/A-Better-Pupper
 4. Write JS code that cycles through data and handles incoreect user entires, and store non-trival code in external sources using all applicale readability standards suchs as indentation and comments where needed. 
  * Achieved - Both guides deploy if/else loops and conditional responses via text messages or class changes depending on user interaction.
 5. Design an implement manual testing with screen shots for verification, and fully document the project's start and end/ fully developed journey using a README.md file. 
- * Achieved - VERIFY!
+ * Achieved - Manual testing is outlined below, and further testing/validation was carried out utilises W3C validators along with Chrome's lighthouse feature. 
 6. Deploy finalised version to GitHub with clearly distinguishable comments where external sources were used. 
- * Achieved - VERIFY!
+ * Achieved - deployed
 7. All code must pass code validators such as W3C and Jshint.
-    * Achieved - VERIFY!
+    * Achieved - results in the validation section below.
 
 
 ## UX
 
 #### Strategy & Scope planes
-The website is targeted at pet owners in need of advice and initially directs them to the three most commen problems.
+The website is targeted at dog owners in need of advice and initially directs them to the three most common problems.
 * Weight
 * Socialsation
 * Excercise
 
-The site offers simple first stepos to tackling each issue and offers increased help if needed via social media pages.
-
-The above categories and broekn down further for new or experiance owners, puppy care or second chance warriors adopting their first pet. 
+The site offers simple first steps to tackle each issue and offers increased help if needed via social media pages.
 
 In terms of scope the current site was kept conscise so as not to overwhelm already worried owners. 
 
@@ -60,7 +58,7 @@ In terms of scope the current site was kept conscise so as not to overwhelm alre
 ### Answer: 
 "The site provides 'the four keys' to help with socialising your pet." The link for socialsation is displayed clearly on the landing page. 
 
-[Site Response](https:#)
+[Site Response](https://firmodaniel.github.io/A-Better-Puppers/socialisation.html)
 
 ## User Experiance 3
 ### Question: 
@@ -69,7 +67,7 @@ In terms of scope the current site was kept conscise so as not to overwhelm alre
 ### Answer:
 "The site provides information on exercise utilising a list of facts, a snippet of our own experiance and a quick, helpful guide to demonstrate how long a dog should be walked based on some user inputs."
 
-[Site Response](https:#)
+[Site Response](https://firmodaniel.github.io/A-Better-Puppers/exercise.html)
 
 ### Wireframes
 #### The Structure & Skeleton planes
@@ -86,14 +84,14 @@ with consistency in mind so each advancing page's style follows the previous.
 Overall the site is responsive and scales with user screen size. 
 
 The site follows a correlating scheme or colours (Custom Purple #f75ce8, Custom Dark Purple #63055a, Cutsom Red #fcbeb3, and some bootstrap basics like primary, info and success classes ).
-These colours are inchanged periodically to avoid visual fatigue. 
+These colours are interchanged periodically to avoid visual fatigue. 
 
 ### Existing Features
 * Header : The header's title 'A Better Puppers' is used for a home link throughout. The other navigations collapse when needed on smaller screens so as not to clutter mobile decives. 
 * Index : Presents navigation via four links which entice the eye by utilising bright colours on a white background. The welcome message changes depending on the time of the day.  
-* Excercise : Mirroring the pages beyond the index here we display facts for excercise to debunk commonly held beliefs on excercise. It also proivides and interactive guide and a push to social media via footer links.
+* Excercise : Mirroring the pages beyond the index here we display facts for excercise to debunk commonly held beliefs. It also proivides and interactive guide and a push to social media via footer links.
 * Socialsation: Again the site offers some easily disgestible facts for users in need of help. We also intriduce and explore the 'Four keys' via a hideable list activated by user input.
-* Feeding Guide: Here we explore some misnomers regarding feeding/ diet and present the user with an expandable guide. Interactive and informative while keeping to our succint ethos. 
+* Feeding Guide: Here we explore some misnomers regarding feeding/diet and present the user with an expandable guide. Interactive and informative while keeping to our succint ethos. 
 * About Us : A willing user can explore the site's creator's own story and reason for being. It comes with images from a personal library as well as redirections back to the site's pages and social medias.
 * Outside of  the 'Index and About Us' pages utilise a combination of hide and fadeIn methods in attempt to allow users take in each line of information rather than an entire page at once.
 * Footer : Links provided to fictional social medias.
@@ -101,11 +99,12 @@ These colours are inchanged periodically to avoid visual fatigue.
 ### Features left to implement 
 * A large form which encompasses diet, excercise and some socialisation tricks which would take longer to fill out but may yield better user results. 
 * An email API to send users guide results, or construct a schedule for users to follow as they implement their newly acquired knowledge.
+* A shop element to utilise refferal links for equipment, toys and books reviewed and rated by our social media community. 
 
 ## Technologies used
 * HTML-For basic structure.
 * CSS-For styling and required Media Query outside of Bootstrap.
-* [JavaScriprt]() 
+* JavaScriprt 
 * [Jquery](https://jquery.com/)
 * [W3C validator](https://validator.w3.org/)-Used in testing HTML and CSS.
 * [JsHINT](https://jshint.com)-Used for Java Script validation.
@@ -131,7 +130,7 @@ These colours are inchanged periodically to avoid visual fatigue.
     * _All links when selected lead to the assigned pages._
 
 * Footer Links
-    *  Footer links are house in a Bootstrap Container to ensure correct sizing. Font size is set to zero using media queries so the footer remains neat on small screens.
+    *  Footer links are housed in a Bootstrap Container to ensure correct sizing. Font size is set to zero using media queries so the footer remains neat on small screens.
         *  FaceBook 
         *  Twitter
         *  Instagram
@@ -151,22 +150,21 @@ These colours are inchanged periodically to avoid visual fatigue.
 #### Manual Testing
 * Guides / Forms are found on both the Excercise Guide page and the Feeding Guide page. 
     * Exercise Guide
-        * The Gender, and Neutered inputs are optional, though both create gender based messages when selected.
-        * For Example 'Oh who's a good boy !' if male is selected. (Text color changes via Add,Class methods based on gender)
+        * The Gender, and Neutered inputs are optional, though both create response based messages when selected.
+        * For Example 'Oh who's a good boy !' if male is selected. (Text colour changes via AddClass methods based on gender)
         * A selected Gender also shows a hidden input requesting the pet's name. Once populated the following questions are populated with the inputted name.
-        * If a Neutered option is selected it creates two messages (colored again depending on selection)
+        * If a Neutered option is selected it creates two messages (coloured again depending on selection)
         * The first appears under the Neutered option. The second appears only once a weight option is selected.
         * The weight input is required for any output in the final line. Upon selection it populates the final output with a custom response based on input in the form of minutes per day.
-        * Resseting Gender and Neutered to the 'make selection' options removes generated messages and the name option input box, but does not clear any previously inputted name.
-        * Bug: although the name option box is marked for 'text' it is accepting numbers inputted by the user. 
-        * The Neutered option also influences the Final output by reducing the minutes needed by 10%. A message further conveys this ot the user. 
+        * Resseting Gender and Neutered to the 'make selection' options removes generated messages and the name option input box, but does not clear any previously inputted name. 
+        * The Neutered option also influences the Final output by reducing the minutes needed by 10%. A message further conveys this to the user. 
     * Feeding Guide
         * As with the excercise guide both Gender and Neutered options are not required for calculations, but both create custom messages, while only gender may influence the final output by 10% up or down.
         * Upon gender selction a new input is shown which requests the pet's name, this input is then used to customise the following questions.
-        * The weight option is required for Daily Protein needs output to user.
+        * The weight option is required for the Daily Protein needs output to user.
         * Food bag size, and current protein range, as well as weight, are both required to populate the Final output.
-        * populating just bag size, or just protein range, or both will not generate any output. A weight selection is needed. 
-        * populating a weight selction, and either bag size OR protein range will not generate a final output. 
+        * Populating just bag size, or just protein range, or both will not generate any output. A weight selection is needed. 
+        * Populating a weight selction, and either bag size OR protein range will not generate a final output. 
     * Given the small number of options on both guides there are no prompts to users to populate all selections. 
 
 ### Responsiveness
@@ -240,7 +238,7 @@ To deploy this page from the [GitHub respository](https://github.com/FirmoDaniel
 
 ## Credits
 ### Content
-* Some text was taken from the following sites
+* Some text was taken from the following sites.
     * [link for exercise text](https://jetpetresort.com/blog/dog-care/the-importance-of-exercising-your-dog/#:~:text=Exercising%20keeps%20your%20dog%20healthy,you%20and%20in%20their%20environment.)
     * [Link for Socilaisation text](https://www.reedanimalhospital.com/the-benefits-of-socializing-your-dog/#:~:text=Socializing%20teaches%20your%20dog%20how,both%20you%20and%20your%20dog.)
     * [Link for diet text](https://pets.webmd.com/dogs/guide/diet-nutrition)
