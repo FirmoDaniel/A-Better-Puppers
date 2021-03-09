@@ -13,8 +13,8 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-light customRed">
-            <a class="navbar-brand" href="#">A Better Puppers</a>
+        <!--<nav class="navbar navbar-expand-md navbar-light customRed">
+            <a class="navbar-brand" href="#">A Better Puppers (Home)</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -36,15 +36,36 @@
                 </li>
               </ul>
             </div>
-          </nav>
+          </nav>-->
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle headerMenuButton"  data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Menu</a>
+                <div class="dropdown-menu">
+                <a class="dropdown-item" href="exercise.html">Excercise Guide</a>
+                <a class="dropdown-item" href="socialisation.html">Socialisation (The Four Keys)</a>
+                <a class="dropdown-item" href="feedingGuide.html">Feeding Guide</a>
+                <a class="dropdown-item" href="aboutUs.html">About us</a>
+                </div>
+            </li>
+        </ul>
     </header>
+    <br>
     <!--BOOSTRAP JUMBO TRON-->
-   <div class="jumbotron bg-white">
-        <h1 class="display-5">Never Give up !</h1>
-        <h1 class="display-5">Never Surrender !</h1>
-        <p class="lead">There's always hope. We know, we've been there.</p>
-        <h3 class = "welcome"> what can we help you with? </h3>
-    </div>  
+   <div class="jumbotron jumboBG">
+       <div class="container ">
+            <h1 class="display-5">Never Give up !</h1>
+            <h1 class="display-5">Never Surrender !</h1>
+            <p class="lead">There's always hope. We know, we've been there.</p>
+            <h3 class = "welcome"> what can we help you with? </h3>
+       </div>
+   </div>  
+   
+
+
+
   
    
     <!--BOOSTRAP CARDS-->
@@ -68,7 +89,7 @@
         </div>
       </div>
     </div>
-    <br>
+    <br class="mediaQueryHide">
     <div class="row">
       <div class="col-sm-6">
         <div class="card">

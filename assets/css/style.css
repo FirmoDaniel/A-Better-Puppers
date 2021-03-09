@@ -2,6 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 
+/*------------------------------------------------------------------------------HEADER */
+.headerMenuButton{
+    color: black!important;
+
+}
+
+/*------------------------------------------------------------------------------JUMBOTRON */
+
+.jumboBG{
+    background-color: #ffc787!important;
+
+}
+
+
+
+
 /*------------------------------------------------------------------------------FONTS (SIZES / COLOURS / THEMES / BORDERS)*/
 
 .customPurple{
@@ -67,6 +83,14 @@ footer{
 
     i {
         color: #d3ddd7;
+    }
+
+    .display-5 {
+        font-size: 28px;
+    }
+
+    .mediaQueryHide {
+        display: none;
     }
 
 }
