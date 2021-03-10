@@ -21,10 +21,32 @@
 
 /*------------------------------------------------------------------------------FONTS (SIZES / COLOURS / THEMES / BORDERS)*/
 
-.customPurple{
-    background-color: #f75ce8;
+
+/*-----Card Backgrounds& Buttons*/
+.customGreen{
+    background-color: #c6f7a9;
 }
 
+
+.customPurple{
+    background-color: #f098e7;
+}
+
+.customOrange{
+    background-color: #f7ce77;
+}
+
+.customBlue{
+    background-color: #93bef7;
+}
+
+.customButton{
+    background-color: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet)!important;
+
+}
+
+
+/*-----Font Colours*/
 .customPurpleDark{
     color:  #63055a;
     font-weight: 900;
