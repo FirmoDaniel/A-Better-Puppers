@@ -1,19 +1,47 @@
 /*------------------------------------------------------------------------------Google Font Import*/
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap'); /*font-family: 'Playfair Display', serif;*/
 
 
 /*------------------------------------------------------------------------------HEADER */
-.headerMenuButton{
-    color: black!important;
+.navbar-nav li a{
+    color: black;
 
 }
 
-/*------------------------------------------------------------------------------JUMBOTRON */
+/*----------JUMBOTRON */
+
+.jumbotron{
+    background-color: #c6e0c1;
+    margin: 0;
+    padding: 0;
+
+}
 
 .jumboBG{
-    background-color: rgba(255, 199, 135, 0.5)!important;
+    background-image: url('../images/bgImage.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    text-align: center;
+    min-height: 400px;
+    max-width: 1024px;
+    height: 100%;
+    margin-bottom: 10px;
     
 
+}
+
+.inner-box{
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background-color: rgba(218, 218, 238, 0.6);
+  margin-top: 50px; 
+  font-weight: 700;
+   
 }
 
 
@@ -23,6 +51,11 @@
 
 
 /*-----Card Backgrounds& Buttons*/
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
 .customGreen{
     background-color: #c6f7a9;
 }
@@ -77,6 +110,13 @@
     font-weight: 900;
 }
 
+/*------------------------------------------------------------------------------INDEX PAGE: ABOUT US */
+
+
+.aboutUs{
+    text-align: left;
+}
+
 /*------------------------------------------------------------------------------FOOTER */
 
 .footer-items i {
@@ -116,16 +156,29 @@ footer{
         display: none;
     }
 
+    .inner-box{
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    background-color: rgba(218, 218, 238, 0.6);
+    margin-top: 25px; 
+    font-weight: 400;
+   
 }
 
-@media screen and (min-width:768px){
+    .card{
+        margin-left: 3%;
+    }
+
+}
+
+/*@media screen and (min-width:768px){
     .scaleDown {
         height: 70%;
         width: 70%;
         
         
     }
-}
+}*/
 
 
 

@@ -13,123 +13,102 @@
 </head>
 <body>
     <header>
-        <!--<nav class="navbar navbar-expand-md navbar-light customRed">
-            <a class="navbar-brand" href="#">A Better Puppers (Home)</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+        <!--bootstrap Navbar, button and collapse feature-->
+        <nav class="navbar navbar-expand-sm">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars" aria-hidden="true"></i></span><span>Menu</span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Elsewhere
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="exercise.html">Excercise Guide</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="socialisation.html">Socialisation (The Four Keys)</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="feedingGuide.html">Feeding Guide</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="aboutUs.html">About us</a>
-                  </div>
-                </li>
-              </ul>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home <span class="sr-only">(current)</span> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="exercise.html"><i class="fas fa-paw" aria-hidden="true"></i> Exercise Guide</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="socialisation.html"><i class="fas fa-dog" aria-hidden="true"></i> Socialisation (The Four Keys)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedingGuide.html"><i class="fas fa-bone" aria-hidden="true"></i> Feeding Guide </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-check-double" aria-hidden="true"></i> Contact Us</a>
+                    </li>
+                </ul>
             </div>
-          </nav>-->
-          <ul class="nav nav-tabs">
-            <li class="nav-item">
-                <a class="nav-link active" href="#">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle headerMenuButton"  data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Menu</a>
-                <div class="dropdown-menu">
-                <a class="dropdown-item" href="exercise.html">Excercise Guide</a>
-                <a class="dropdown-item" href="socialisation.html">Socialisation (The Four Keys)</a>
-                <a class="dropdown-item" href="feedingGuide.html">Feeding Guide</a>
-                <a class="dropdown-item" href="aboutUs.html">About us</a>
+        </nav>
+        <div class="container-fluid jumboBG">
+            <div class="row">
+                <div class="col-sm-12 inner-box">
+                    <h3 class = "welcome"> thanks for visting A Better Puppers. </h3>
                 </div>
-            </li>
-        </ul>
+            </div>
+        </div>
     </header>
     <br>
-    <!--BOOSTRAP JUMBO TRON-->
-   <div class="jumbotron jumboBG">
-        <div class="row">
-            <div class="container col-6 ">
-                    <h1 class="display-5">Never Give up !</h1>
-                    <h1 class="display-5">Never Surrender !</h1>                   
-            </div>
-            <div class="container col-6 ">
-                <img src="assets/images/bgImage.jpg" class="img-thumbnail scaleDown" alt="puppy sitting with ears perked">
-            </div>
-        </div> 
-        <div class="row">
-            <p class="lead">There's always hope. We know, we've been there.</p>
-        </div>
-   </div>   
-   <div class="container">
-    <h3 class = "welcome"> we hope you're well. </h3>
+    <div class="container">
+        <h5>We're here to provide actionable solutions to the three biggest problems dog owners run into:</h5>
+        <ul>
+            <li>Weight issues.</li>
+            <li>Energy levels.</li>
+            <li>Behaviour.</li>
+        </ul>
+        <p>No gimmicks, no pay walls, just helpful suggestions and some custom guides. Check out the links below, and you can always sign up to our newsletter for more info here(link to sign up).</p>
+    </div>
     <br>
-    <h5>We're here to provide actionable solutions to the three biggest problems dog owners run into:</h5>
-    <br>
-    <ul>
-        <li>Weight issues.</li>
-        <li>Energy levels.</li>
-        <li>Behaviour.</li>
-    </ul>
-    <p>No gimmicks, no pay walls, just helpful suggestions and some custom guides. Check out the links below, and you can always nudge us via our social media if you need more help.</p>
-   </div>
-   <br>
-   
 
-
-
-  
-   
     <!--BOOSTRAP CARDS-->
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm-3 offset-sm-1">
         <div class="card">
           <div class="card-body customBlue">
             <h5 class="card-title">Diet</h5>
-            <p class="card-text">Check out our guide, hints & tips.</p>
-            <a href="feedingGuide.html" class="btn customButton">Yummers !</a>
+            <p class="card-text">Check out our feeding guide, hints & tips.</p>
+            <a href="feedingGuide.html" class="btn btn-success">Yummers !</a>
           </div>
         </div>
       </div>
-      <div class="col-sm-6">
+    <div class="col-sm-3">
         <div class="card">
-          <div class="card-body customOrange">
-            <h5 class="card-title">Excercise</h5>
-            <p class="card-text">Lots of do's and don't's, and a helpful guide.</p>
-            <a href="exercise.html" class="btn btn-success">Fetch !</a>
-          </div>
+            <div class="card-body customOrange">
+                <h5 class="card-title">Excercise</h5>
+                <p class="card-text">Lots of do's and don't's, and a guide.</p>
+                <a href="exercise.html" class="btn btn-success">Fetch !</a>
+            </div>
         </div>
-      </div>
     </div>
-    <br class="mediaQueryHide">
-    <div class="row">
-      <div class="col-sm-6">
+    <div class="col-sm-3">
         <div class="card">
           <div class="card-body customPurple">
             <h5 class="card-title">Socialisation</h5>
-            <p class="card-text">Support with meeting new friends, or mending fences.</p>
+            <p class="card-text">New friends, or mending fences.</p>
             <a href="socialisation.html" class="btn btn-success">Who's the best !</a>
           </div>
         </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body customGreen">
-            <h5 class="card-title">About us</h5>
-            <p class="card-text">The story behind our experiences and why we created this stie.</p>
-            <a href="aboutUs.html" class="btn btn-success">Head tilt, ears perked ! </a>
-          </div>
-        </div>
-      </div>
+    </div>
     </div>
     <br>
+    <div class="container">
+      <h2>A little about us.</h2>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-sm-6">
+                <img src="assets/images/gsd.jpg" class="img-fluid" alt="German Shephard Dog">
+            </div>
+            <div class="col-sm-6 aboutUs">
+                <p> About a year ago we adopted our first dog, and added a third puppers to our family. Bowie was a two year old GSD, and she hadn't been given the best start in life.
+                    She was under weight due to being bounced around foster homes without no real time to adjust. She'd spent most of her life in chain-link run with no access to
+                    other dogs or people. She never learned how to play.
+                </p> 
+            </div>
+        </div>
+    </div>
+      
+
+    <br class="mediaQueryHide">
   <!--FOOTER-->
   <div class="container">
     <footer id="footer">
