@@ -25,14 +25,14 @@ $(document).ready(function(){
     let gend, neutCheck, proteinNeeds2, dpnString, weightString, exe2, dpnString2;
 
         // HIDE SHOW TOGGLE
-        $("#hide1").hide().delay(500).fadeIn();
+       /* $("#hide1").hide().delay(500).fadeIn();
         $("#hide2").hide().delay(1000).fadeIn();
         $("#hide3").hide().delay(2500).fadeIn();
         $("#hide3").hide().delay(4500).fadeIn();
         $("#hide4").hide().delay(5000).fadeIn();
         $("#hide5").hide().delay(5000).fadeIn();
         $("#clickMe").hide().delay(5000).fadeIn();
-        $(".hideFooter").hide().delay(5000).fadeIn();
+        $(".hideFooter").hide().delay(5000).fadeIn();*/
 
         if(exe2 > 0){
             $("#exeFinalMsg").show();
@@ -41,17 +41,31 @@ $(document).ready(function(){
         }
     
     
-        $("#guide").hide();
+        /*$("#guide").hide();*/
         $("#hideShowGender").hide();
     
-        $("#clickMe").on("click", function(){
+        $("#feedingGuide").on("click", function(){
             $("#guide").toggle();
         });
 
         $("#socialGuide").on("click", function(){
             $("#guide").toggle();
         });
-    
+
+    // Reset forms       
+        $("#formReset").on("click", function(){
+            $("#genderMsg").hide();
+            $("#hideShowGender").hide();
+            //NOTE: tried resetting name value (#pName) to 0 to avoid adding the below commands 
+            $("#weightName").text(`How much does your puppers weigh ? `);
+            $("#basedOnInputsoFar").text(`Base on your input so far, your pupper's daily protein needs are : `);
+            $("#etInputSoFar").text(`Using your input so far, your pupper's daily excercise needs are :`);
+            $("#neuteredGivenName").text(`Is your Puppers neutered ? `);
+            $("#givenNameFinal").text(`Looks your puppers will need : `);
+            $("#bagName").text(`How big is your pupper's food bag ? `);
+            $("#proteinRangeName").text(`What's the protein range of your pupper's food ? `);
+            $("#onOff").text(`Is your puppers walked on or off leash ? `);
+        });
 
     // Updating pet name
     $(document).on("blur", "#pName", function(){
@@ -96,7 +110,7 @@ $(document).ready(function(){
         if(givenName.length > 0){
             $("#proteinRangeName").text(`What's the protein range of `+ givenName + `'s' food ? `);
         }else{
-            $("#ProteinRangeName").text(`What's the protein range of your pupper's food ? `);
+            $("#proteinRangeName").text(`What's the protein range of your pupper's food ? `);
         }
         if(givenName.length > 0){
             $("#onOff").text(`Is `+ givenName + ` walked on or off leash ? `);
@@ -232,7 +246,7 @@ $(document).ready(function(){
             needsTotalMsg = " ";
         }
 
-        $("#weight5").val(needsTotal + needsTotalMsg);
+        $("#weight5").text(needsTotal + needsTotalMsg);
 
     });
 //**************************************** EXCERCISE GUIDE

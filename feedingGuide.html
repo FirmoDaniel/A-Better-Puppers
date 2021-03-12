@@ -68,15 +68,15 @@
 
     <!--Hide button for forms-->
     <div class="container">
-        <button class ="btn btn-success" id="clickMe">Start feeding guide</button>
+        <button class ="btn btn-success" id="feedingGuide">Start feeding guide</button>
         <br>
         <form id="guide" class="bg-warning" autocomplete="off">
 
         <!-- GENDER-->
-            <div class="form-group">
+            <div class="form-group col-sm-6 offset-1,1">
             <label for="gender">Gender </label>
             <div class="input-container">
-                <select id="gender" class="genderOptions neuteredOptions" name="gender">
+                <select id="gender" class=" form-control genderOptions neuteredOptions" name="gender">
                     <option id="noChoiceGender" value="0"> Make Selection </option>
                     <option id ="male" value="1.1" >Male</option>
                     <option id="female" value=".9" >Female</option>
@@ -84,21 +84,21 @@
             </div>
             <small id="genderMsg"></small>
             
-            <div id="hideShowGender">
+            <div id="hideShowGender" class="form-group">
                 <br>
                 <label id="pNameQuestion"></label>
                 <div class="input-container">
                     <!--input type text not working, box accepting numbers!-->
-                    <input type="text" id="pName" name="pets_name">
+                    <input class="form-control" type="text" id="pName" name="pets_name">
                 </div>
             </div>
             </div>
             
             <!-- Neutered  HAS THREE CLASSES-->
-            <div class="form-group">         
-                <label id="neuteredGivenName" for="neutered"> Is your puppers Neutered ? </label>
+            <div class="form-group col-sm-6 offset-1,1">         
+                <label id="neuteredGivenName" for="neutered"> Is your puppers Neutered? </label>
                 <div class="input-container">
-                    <select id="neutered" class="neuteredOptions weightOptions proteinOptions" name="neutered">
+                    <select id="neutered" class="form-control neuteredOptions weightOptions proteinOptions" name="neutered">
                         <option id="noChoiceNeutered" value=""> Make Selection </option>
                         <option id ="yesNeutered" value="" >Yes</option>
                         <option id="noNeutered" value="" >No</option>
@@ -108,10 +108,10 @@
             </div>
 
         <!-- Weight-->
-            <div class="form-group">            
-                <label id="weightName" class="name" for="weight">How much does you puppers weigh ? </label>
+            <div class="form-group col-sm-6 offset-1,1">            
+                <label id="weightName" class="name" for="weight">How much does you puppers weigh? </label>
                 <div class="input-container">
-                    <select id="weight" class="weightOptions proteinOptions" name="weight">
+                    <select id="weight" class="form-control weightOptions proteinOptions" name="weight">
                         <option id="noChoiceWeight" value="0"> Make Selection </option>
                         <option id ="small" value="10" >Less than 5kg</option>
                         <option id="medium" value="15" > 5-15kg's</option>
@@ -123,19 +123,19 @@
             </div>
 
         <!--WEIGHT CALCS-->
-            <div class="form-group">
+            <div class="form-group col-sm-6 offset-1,1">
                 <label id="basedOnInputsoFar" for="weight2">Using your input so far, your pupper's daily protein needs are : </label>
                 <div class="input-container">
-                    <input id="weight2" type="text" name="weight2" placeholder="0 %" readonly>
+                    <input class="form-control" id="weight2" type="text" name="weight2" placeholder="0 %" readonly>
                 </div>
                 <small id="dpn"></small>
             </div>
 
         <!--BAG CALCS-->
-            <div class="form-group">
+            <div class="form-group col-sm-6 offset-1,1">
                 <label id="bagName">How big is your pupper's food bag ?</label>
                 <div class="input-container">
-                    <select id="weight3" class="proteinOptions" name="weight">
+                    <select id="weight3" class="form-control proteinOptions" name="weight">
                         <!--changed noChoiceProtein to noChoiceBag-->
                         <option id="noChoiceBag" value="0"> Make Selection </option>
                         <option value="5" >10kg or less</option>
@@ -147,10 +147,10 @@
             </div>
 
         <!--PROTEIN CALCS-->
-            <div class="form-group">
+            <div class="form-group col-sm-6 offset-1,1">
                 <label id="proteinRangeName">What's the protein range of your pupper's food ? </label>
                 <div class="input-container">
-                    <select id="weight4" class="proteinOptions" name="weight">
+                    <select id="weight4" class=" form-control proteinOptions" name="weight">
                         <option id="noChoiceProtein" value="0"> Make Selection </option>
                         <option value="3.0" >10% or less</option>
                         <option value="2.5" >10% to 15%</option>
@@ -160,12 +160,12 @@
                     </select>
                 </div>
             </div>
-            <div class="form-group">
-                <label id= "givenNameFinal" for="weight5">Looks like your puppers will need :  </label>
-                <div class="input-container">
-                    <textarea id ="weight5" name="weight5" rows="2" cols="35" readonly></textarea>
-                </div>
+            <div class="form-group col-sm-6 offset-1,1">
+                <div id= "givenNameFinal">Looks like your puppers will need :  <span id="weight5"></span></div>
                 <br>
+            </div>
+            <div class="col-auto">
+                <button type="reset" id="formReset" class="btn btn-primary mb-2">Reset</button>
             </div>
         </form>
         <br>
@@ -176,6 +176,7 @@
         </p>
     </div>
     <br>
+    
     <!--FOOTER-->
     <div class="container">
         <footer id="footer" class="hideFooter">
