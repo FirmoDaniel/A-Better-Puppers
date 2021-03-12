@@ -25,7 +25,7 @@ $(document).ready(function(){
     let gend, neutCheck, proteinNeeds2, dpnString, weightString, exe2, dpnString2;
 
         // HIDE SHOW TOGGLE
-       /* $("#hide1").hide().delay(500).fadeIn();
+       /*
         $("#hide2").hide().delay(1000).fadeIn();
         $("#hide3").hide().delay(2500).fadeIn();
         $("#hide3").hide().delay(4500).fadeIn();
@@ -44,7 +44,7 @@ $(document).ready(function(){
         /*$("#guide").hide();*/
         $("#hideShowGender").hide();
     
-        $("#feedingGuide").on("click", function(){
+        $("#showGuide").on("click", function(){
             $("#guide").toggle();
         });
 
@@ -56,7 +56,7 @@ $(document).ready(function(){
         $("#formReset").on("click", function(){
             $("#genderMsg").hide();
             $("#hideShowGender").hide();
-            //NOTE: tried resetting name value (#pName) to 0 to avoid adding the below commands 
+            //NOTE: tried resetting name value (#pName) to 0 on click to avoid adding the below commands.
             $("#weightName").text(`How much does your puppers weigh ? `);
             $("#basedOnInputsoFar").text(`Base on your input so far, your pupper's daily protein needs are : `);
             $("#etInputSoFar").text(`Using your input so far, your pupper's daily excercise needs are :`);

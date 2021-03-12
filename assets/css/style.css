@@ -1,12 +1,19 @@
 /*------------------------------------------------------------------------------Google Font Import*/
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap'); /*font-family: 'Playfair Display', serif;*/
 
 
 /*------------------------------------------------------------------------------HEADER */
 .navbar-nav li a{
     color: black;
+    font-family: 'Lato', sans-serif;
 
+}
+
+/*------------------------------------------------------------------------------BODY */
+
+body{
+    font-family: 'Playfair Display', serif!important;
 }
 
 /*----------JUMBOTRON */
@@ -50,7 +57,7 @@
 /*------------------------------------------------------------------------------FONTS (SIZES / COLOURS / THEMES / BORDERS)*/
 
 
-/*-----Card Backgrounds& Buttons*/
+/*-----Card Backgrounds & Buttons*/
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
@@ -73,13 +80,18 @@
     background-color: #93bef7;
 }
 
-.customButton{
-    background-color: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet)!important;
 
+
+/*-----Font Colours, Borders & Sizes*/
+.allCaps{
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
+.underline, .active{
+    border-bottom: 3px solid rgb(71, 212, 78);
+}
 
-/*-----Font Colours*/
 .customPurpleDark{
     color:  #63055a;
     font-weight: 900;
@@ -110,12 +122,6 @@
     font-weight: 900;
 }
 
-/*------------------------------------------------------------------------------INDEX PAGE: ABOUT US */
-
-
-.aboutUs{
-    text-align: left;
-}
 
 /*------------------------------------------------------------------------------FOOTER */
 
@@ -170,24 +176,3 @@ footer{
     }
 
 }
-
-/*@media screen and (min-width:768px){
-    .scaleDown {
-        height: 70%;
-        width: 70%;
-        
-        
-    }
-}*/
-
-
-
-
-
-
-
-
-
-
-
-

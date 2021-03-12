@@ -13,35 +13,32 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-light customRed">
-            <a class="navbar-brand" href="index.html">A Better Puppers (Home)</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+        <!--bootstrap Navbar, button and collapse feature-->
+        <nav class="navbar navbar-expand-sm">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars" aria-hidden="true"></i></span><span>Menu</span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Elsewhere
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item active" href="exercise.html">Excercise Guide</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="socialisation.html">Socialisation (The Four Keys)</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="feedingGuide.html">Feeding Guide</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="aboutUs.html">About us</a>
-                  </div>
-                </li>
-              </ul>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="exercise.html"><i class="fas fa-paw" aria-hidden="true"></i> Exercise Guide <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="socialisation.html"><i class="fas fa-dog" aria-hidden="true"></i> Socialisation (The Four Keys)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedingGuide.html"><i class="fas fa-bone" aria-hidden="true"></i> Feeding Guide </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-check-double" aria-hidden="true"></i> Contact Us</a>
+                    </li>
+                </ul>
             </div>
-          </nav>
+        </nav>
     </header>
-    <div class="container">
-        <h1>Welcome</h1>
-        <h3 id ="hide1">We hope you're well!</h3>
-    </div>
     <!--Start of delays-->
     <br>
     <div class="container" id ="hide2">
@@ -49,7 +46,7 @@
     </div>
     <div class="container bg-info" id="hide3">
         <ul class="list-group list-group-flush">
-            <li class="list-group-item">Two walks a day is the recommended frequency, but one longer walk will do in a pinch</li>
+            <li class="list-group-item">Two walks a day is the recommended frequency, but one longer walk will do in a pinch.</li>
             <li class="list-group-item">Throwing a ball in a field, while fun, doesn't count as execise.</li>
             <li class="list-group-item">It's as much about burning off mental energy as it is about physical.</li>
             <li class="list-group-item">Properly excercised dogs are not only healthier but better behaved.</li>
@@ -68,15 +65,14 @@
     </div>
     <!--EXCERCISE GUIDE-->
     <div class="container">
-        <button class ="btn btn-success" id="clickMe">Start excercise guide</button>
-        <br>
+
         <form id="guide" class="bg-warning" autocomplete="off">
 
         <!-- GENDER-->
-            <div class="form-group">
+            <div class="form-group col-sm-6 offset-1,1">
             <label for="gender">Gender </label>
             <div class="input-container">
-                <select id="gender" class="genderOptions neuteredOptions" name="gender">
+                <select id="gender" class="form-control genderOptions neuteredOptions" name="gender">
                     <option id="noChoiceGender" value="0"> Make Selection </option>
                     <option id ="male" value="1.1" >Male</option>
                     <option id="female" value=".9" >Female</option>
@@ -84,21 +80,21 @@
             </div>
             <small id="genderMsg"></small>
             
-            <div id="hideShowGender">
+            <div id="hideShowGender" class="form-group">
                 <br>
                 <label id="pNameQuestion"></label>
                 <div class="input-container">
                     <!--input type text not working, box accepting numbers!-->
-                    <input type="text" id="pName" name="pets_name">
+                    <input class="form-control" type="text" id="pName" name="pets_name">
                 </div>
             </div>
             </div>
             
             <!-- Neutered  HAS THREE CLASSES-->
-            <div class="form-group">         
-                <label id="neuteredGivenName" for="neutered"> Is your puppers Neutered ? </label>
+            <div class="form-group col-sm-6 offset-1,1">         
+                <label id="neuteredGivenName" for="neutered"> Is your puppers Neutered? </label>
                 <div class="input-container">
-                    <select id="neutered" class="neuteredOptions weightOptionsET proteinOptionsET" name="neutered">
+                    <select id="neutered" class="form-control neuteredOptions weightOptionsET proteinOptionsET" name="neutered">
                         <option id="noChoiceNeutered" value=""> Make Selection </option>
                         <option id ="yesNeutered" value="" >Yes</option>
                         <option id="noNeutered" value="" >No</option>
@@ -108,10 +104,10 @@
             </div>
 
         <!-- Weight-->
-            <div class="form-group">            
-                <label id="weightName" class="name" for="weight">How much does you puppers weigh ? </label>
+            <div class="form-group col-sm-6 offset-1,1">            
+                <label id="weightName" class="name" for="weight">How much does you puppers weigh? </label>
                 <div class="input-container">
-                    <select id="weight" class="weightOptionsET proteinOptionsET" name="weight">
+                    <select id="weight" class=" form-control weightOptionsET proteinOptionsET" name="weight">
                         <option id="noChoiceWeight" value="0"> Make Selection </option>
                         <option id ="small" value="10" >Less than 5kg</option>
                         <option id="medium" value="15" > 5-15kg's</option>
@@ -123,17 +119,22 @@
             </div>
 
         <!--EXCERCISE TIME-->
-            <div class="form-group">
+            <div class="form-group col-sm-6 offset-1,1">
                 <label id="etInputSoFar">Using your input so far, your pupper's daily excercise needs are : </label>
                 <div class="input-container">
-                    <input id="weightET" type="text" name="weight2" value="" placeholder="0 mins twice per day" readonly>
+                    <input id="weightET" class="form-control" type="text" name="weight2" value="" placeholder="0 mins twice per day" readonly>
                 </div>
                 <small id="et"></small>
             </div>
             <br>
+            <div class="col-auto">
+                <button type="reset" id="formReset" class="btn btn-primary mb-2">Reset</button>
+            </div>
         </form>
         <br>
+        <button class ="btn btn-success" id="showGuide">Show/Hide Guide</button>
     </div>
+    <br>
     <div class="container" id="hide5">
         <p>We hope this helps somewhat, but if you have any other questions please nudge us via our social media's. 
         We're only too happy to help with whatever we can, and if not, we can certainly point you in the right direction. 
