@@ -63,6 +63,10 @@ body{
   margin-left: 0;
 }
 
+.card-title{
+    font-weight: 900!important;
+}
+
 .customGreen{
     background-color: #c6f7a9;
 }
