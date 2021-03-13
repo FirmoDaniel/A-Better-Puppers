@@ -24,24 +24,15 @@ $(document).ready(function(){
 
     let gend, neutCheck, proteinNeeds2, dpnString, weightString, exe2, dpnString2;
 
-        // HIDE SHOW TOGGLE
-       /*
-        $("#hide2").hide().delay(1000).fadeIn();
-        $("#hide3").hide().delay(2500).fadeIn();
-        $("#hide3").hide().delay(4500).fadeIn();
-        $("#hide4").hide().delay(5000).fadeIn();
-        $("#hide5").hide().delay(5000).fadeIn();
-        $("#clickMe").hide().delay(5000).fadeIn();
-        $(".hideFooter").hide().delay(5000).fadeIn();*/
 
-        if(exe2 > 0){
+       /*(unsure where this is used)>>if(exe2 > 0){
             $("#exeFinalMsg").show();
         }else{
             $("#exeFinalMsg").hide();
-        }
+        }*/
     
     
-        /*$("#guide").hide();*/
+        $("#guide").hide();
         $("#hideShowGender").hide();
     
         $("#showGuide").on("click", function(){
@@ -56,15 +47,17 @@ $(document).ready(function(){
         $("#formReset").on("click", function(){
             $("#genderMsg").hide();
             $("#hideShowGender").hide();
+            $("#et").hide();
+            $("#neuteredMsg").hide();
             //NOTE: tried resetting name value (#pName) to 0 on click to avoid adding the below commands.
-            $("#weightName").text(`How much does your puppers weigh ? `);
+            $("#weightName").text(`How much does your puppers weigh? `);
             $("#basedOnInputsoFar").text(`Base on your input so far, your pupper's daily protein needs are : `);
             $("#etInputSoFar").text(`Using your input so far, your pupper's daily excercise needs are :`);
-            $("#neuteredGivenName").text(`Is your Puppers neutered ? `);
+            $("#neuteredGivenName").text(`Is your puppers neutered? `);
             $("#givenNameFinal").text(`Looks your puppers will need : `);
-            $("#bagName").text(`How big is your pupper's food bag ? `);
-            $("#proteinRangeName").text(`What's the protein range of your pupper's food ? `);
-            $("#onOff").text(`Is your puppers walked on or off leash ? `);
+            $("#bagName").text(`How big is your pupper's food bag? `);
+            $("#proteinRangeName").text(`What's the protein range of your pupper's food? `);
+            $("#onOff").text(`Is your puppers walked on or off leash ? `); //ARE WE USING THIS ???
         });
 
     // Updating pet name
@@ -280,9 +273,6 @@ $(document).on("change", ".weightOptionsET", function(){
 
 //******************************* CONTACT FORM
 
- /*$("#SubmitButton").on("click", function(){
-     $("#contactForm :input").attr("value", "");
- });*/
 
 
  $("#SubmitButton").on("blur", function(){

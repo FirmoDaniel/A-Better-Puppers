@@ -39,12 +39,11 @@
             </div>
         </nav>
     </header>
-    <!--Start of delays-->
     <br>
-    <div class="container" id ="hide2">
+    <div class="container">
         <h2>First thing's first, let's get the excercise facts straight.</h2>
     </div>
-    <div class="container bg-info" id="hide3">
+    <div class="container bg-info">
         <ul class="list-group list-group-flush">
             <li class="list-group-item">Two walks a day is the recommended frequency, but one longer walk will do in a pinch.</li>
             <li class="list-group-item">Throwing a ball in a field, while fun, doesn't count as execise.</li>
@@ -56,7 +55,7 @@
           </ul>
     </div>
     <br>
-    <div class="container" id="hide4">
+    <div class="container">
         <p>We, like most people, tried to get our dogs out everyday. Nowadays we've removed the 'tried' from that statement.
            They go out EVERYDAY. Rain, cold, dark, it doesn't matter. As long as they can be kept safe, they go. Alas, also like most people
            we were not only not walking them enough, we were walking them incorrectly. 
@@ -65,34 +64,31 @@
     </div>
     <!--EXCERCISE GUIDE-->
     <div class="container">
-
         <form id="guide" class="bg-warning" autocomplete="off">
-
         <!-- GENDER-->
             <div class="form-group col-sm-6 offset-1,1">
-            <label for="gender">Gender </label>
-            <div class="input-container">
-                <select id="gender" class="form-control genderOptions neuteredOptions" name="gender">
-                    <option id="noChoiceGender" value="0"> Make Selection </option>
-                    <option id ="male" value="1.1" >Male</option>
-                    <option id="female" value=".9" >Female</option>
-                </select>           
-            </div>
-            <small id="genderMsg"></small>
-            
-            <div id="hideShowGender" class="form-group">
-                <br>
-                <label id="pNameQuestion"></label>
+                <label for="gender">Gender </label>
                 <div class="input-container">
-                    <!--input type text not working, box accepting numbers!-->
-                    <input class="form-control" type="text" id="pName" name="pets_name">
+                    <select id="gender" class="form-control genderOptions neuteredOptions" name="gender">
+                        <option id="noChoiceGender" value="0"> Make Selection </option>
+                        <option id ="male" value="1.1" >Male</option>
+                        <option id="female" value=".9" >Female</option>
+                    </select>           
                 </div>
-            </div>
+                <!--NOT SET UP HERE <small id="genderMsg"></small>-->      
+                <div id="hideShowGender" class="form-group">
+                    <br>
+                    <label id="pNameQuestion"></label>
+                    <div class="input-container">
+                        <!--input type text not working, box accepting numbers!-->
+                        <input class="form-control" type="text" id="pName" name="pets_name">
+                    </div>
+                </div>
             </div>
             
             <!-- Neutered  HAS THREE CLASSES-->
             <div class="form-group col-sm-6 offset-1,1">         
-                <label id="neuteredGivenName" for="neutered"> Is your puppers Neutered? </label>
+                <label id="neuteredGivenName" for="neutered"> Is your puppers neutered? </label>
                 <div class="input-container">
                     <select id="neutered" class="form-control neuteredOptions weightOptionsET proteinOptionsET" name="neutered">
                         <option id="noChoiceNeutered" value=""> Make Selection </option>
@@ -105,7 +101,7 @@
 
         <!-- Weight-->
             <div class="form-group col-sm-6 offset-1,1">            
-                <label id="weightName" class="name" for="weight">How much does you puppers weigh? </label>
+                <label id="weightName" class="name" for="weight">How much does your puppers weigh? </label>
                 <div class="input-container">
                     <select id="weight" class=" form-control weightOptionsET proteinOptionsET" name="weight">
                         <option id="noChoiceWeight" value="0"> Make Selection </option>
@@ -136,7 +132,7 @@
     </div>
     <br>
     <div class="container" id="hide5">
-        <p>We hope this helps somewhat, but if you have any other questions please nudge us via our social media's. 
+        <p>We hope this helps, but if you have any other questions please nudge us via our social media's, or contact us <a href="contactUs.html">here.</a> 
         We're only too happy to help with whatever we can, and if not, we can certainly point you in the right direction. 
         </p>
     </div>   
