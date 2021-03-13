@@ -278,4 +278,19 @@ $(document).on("change", ".weightOptionsET", function(){
 
 });
 
+//******************************* CONTACT FORM
+
+ /*$("#SubmitButton").on("click", function(){
+     $("#contactForm :input").attr("value", "");
+ });*/
+
+
+ $("#SubmitButton").on("blur", function(){
+     $('#contactForm').find("input[type=text]").val("");
+     $('#contactForm').find("input[type=email]").val("");
+ });
+
+
+
+
 });
