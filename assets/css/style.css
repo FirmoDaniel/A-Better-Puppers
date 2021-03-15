@@ -96,6 +96,10 @@ body{
     border-bottom: 3px solid rgb(71, 212, 78);
 }
 
+.active i{
+    color: rgb(71, 212, 78);
+}
+
 .customPurpleDark{
     color:  #63055a;
     font-weight: 900;

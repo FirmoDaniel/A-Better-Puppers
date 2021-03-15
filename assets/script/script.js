@@ -274,13 +274,11 @@ $(document).on("change", ".weightOptionsET", function(){
 //******************************* CONTACT FORM
 
 
-
+//clear form
  $("#SubmitButton").on("blur", function(){
      $('#contactForm').find("input[type=text]").val("");
      $('#contactForm').find("input[type=email]").val("");
  });
-
-
 
 
 });

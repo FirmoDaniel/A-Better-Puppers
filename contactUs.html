@@ -47,24 +47,23 @@
             </div>
         </nav>
     </header>
-    <div class="container jumboBG">
-    </div>
-    <div class="container">
-        <form onsubmit="return sendMail(this);" class="bg-warning" id="contactForm">
+    <div class="container jumboBG" style="margin-bottom: 0px;"></div>
+    <div class="container bg-warning" style="border: 4px solid black">
+        <form onsubmit="return sendMail(this);" id="contactForm">
             <br>
             <div class="form-group col-sm-6 offset-1,1">
-                <input type="text" class="form-control" placeholder="Your name" id="name" name="name">
+                <input type="text" class="form-control" placeholder="Your name" id="name" name="name" required>
             </div>
             <div class="form-group col-sm-6 offset-1,1">
                 <label for="exampleFormControlInput1">Email address</label>
-                <input type="email" class="form-control" id="emailaddress" placeholder="name@example.com" required name="emailaddress">
+                <input type="email" class="form-control" id="emailaddress" placeholder="name@example.com" name="emailaddress" required>
             </div>
             <div class="form-group col-sm-6 offset-1,1">
                 <label for="exampleFormControlTextarea1">Anything specific you'd like us to know?</label>
                 <input type="text" class="form-control" id="message" rows="3" name="message">
             </div>
             <div class="form-group col-sm-6 offset-1,1">
-            <button type="submit" class="btn btn-success" id="SubmitButton">Submit</button>
+            <button type="submit" value="submit" class="btn btn-success" id="SubmitButton">Submit</button>
             <small class="form-text "> * By submitting you agree to receive our monthly newsletter</small>
             </div>
             <br>
