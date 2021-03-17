@@ -301,25 +301,4 @@ $(document).ready(function(){
     });
 
 
-    /*$("#cardTextHideButtonFour" || "#cardTextHideButtonThree" || "#cardTextHideButtonTwo" || "#cardTextHideButtonOne" ).on("click",function(){
-        if($(this).text() === "Explore"){
-            $(this).text("Close");
-        }
-        else{
-            $(this).text("Explore");
-        }
-    });*/
-
-
-
-//******************************* CONTACT FORM
-
-
-    //clear form
-    $("#SubmitButton").on("blur", function(){
-        $('#contactForm').find("input[type=text]").val("");
-        $('#contactForm').find("input[type=email]").val("");
-    });
-
-
 });

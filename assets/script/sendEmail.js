@@ -7,6 +7,8 @@ function sendMail(contactForm){
  .then(
         function(response) {
             console.log("SUCCESS", response);
+            $('#contactForm').find("input[type=text]").val("");
+            $('#contactForm').find("input[type=email]").val("");
         },
         function(error) {
             console.log("FAILED", error);
