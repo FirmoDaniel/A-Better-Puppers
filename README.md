@@ -5,7 +5,7 @@
 The site's puprose is to provide information on general canine health. Be that physical, mental or social. Through a series of responsive questionaires we evalute dietery needs and optimal excercise duration.
 We also provide 'the four keys' which address the most common mistakes involving socialising a dog.
 The aim is to help onwers learn through simple changes they can make to their pets everyday life. 
-There is a repeated drive for users to visit our social media pages for further engagement. 
+There is a repeated drive for users to sign up to our newsletter for further engagement. 
 
 What separates the site from others is our 'Pet First' approach. Above all else our goal is wider awaremness of the simple things we can all do to improve our pet's life. 
 
@@ -18,7 +18,7 @@ A live version can be found [here](https://firmodaniel.github.io/A-Better-Pupper
     * Achieved - The site has 5 pages. Index & Socialsation have minor JS, while Excercise and Feeding guide have more substantial interactivity via guides.
 2. Site Responses: Use JS to have the site produce relevant responses dependant on users' actions.
      * Achieved - Both the feeding guide and excercise guide respond to user input selections from drop downs, and directly from typed input. 
-3. Documentation: Write a README.md file for your project that explains what the project does and the value it provides.
+3. Documentation: Write a 'README' file for your project that explains what the project does and the value it provides.
     * Achieved - Overview of project outline in the 'Project aim' section.
 4. Write JS code that cycles through data and handles incoreect user entires, and store non-trival code in external sources using all applicale readability standards suchs as indentation and comments where needed. 
  * Achieved - Both guides deploy if/else loops and conditional responses via text messages or class changes depending on user interaction.
@@ -34,9 +34,9 @@ A live version can be found [here](https://firmodaniel.github.io/A-Better-Pupper
 
 #### Strategy & Scope planes
 The website is targeted at dog owners in need of advice and initially directs them to the three most common problems.
-* Weight
-* Socialsation
-* Excercise
+* Weight issues.
+* Energy levels.
+* Behaviour.
 
 The site offers simple first steps to tackle each issue and offers increased help if needed via social media pages.
 
@@ -49,7 +49,7 @@ In terms of scope the current site was kept conscise so as not to overwhelm alre
 ### Answer: 
 "The site provides some simple facts on feeding, and an interactive guide on how much the user's pet's protein needs with a further option to provide food weigh in grams based on the user's current food type."
 
-[Site Response](https:https://firmodaniel.github.io/A-Better-Puppers/feedingGuide.html)
+![Site Response UX1](screenshots/uxFeedingGuide.png)
 
 ## User Experinace 2
 ### Question: 
@@ -58,7 +58,7 @@ In terms of scope the current site was kept conscise so as not to overwhelm alre
 ### Answer: 
 "The site provides 'the four keys' to help with socialising your pet." The link for socialsation is displayed clearly on the landing page. 
 
-[Site Response](https://firmodaniel.github.io/A-Better-Puppers/socialisation.html)
+![Site Response UX2](screenshots/uxSocialisation.png)
 
 ## User Experiance 3
 ### Question: 
@@ -67,7 +67,7 @@ In terms of scope the current site was kept conscise so as not to overwhelm alre
 ### Answer:
 "The site provides information on exercise utilising a list of facts, a snippet of our own experiance and a quick, helpful guide to demonstrate how long a dog should be walked based on some user inputs."
 
-[Site Response](https://firmodaniel.github.io/A-Better-Puppers/exercise.html)
+![Site Response UX3](screenshots/uxExercise.png)
 
 ### Wireframes
 #### The Structure & Skeleton planes
@@ -75,7 +75,7 @@ In keeping with the uncomplicated approach agreed upon in our Scope plane, the i
 with consistency in mind so each advancing page's style follows the previous.
 
 
-* [WireFrame Overview](Assets/Images/wireframes/wireframe.pdf)
+![WireFrame Overview](screenshots/wireFrame.png)
 
 
 
@@ -83,28 +83,27 @@ with consistency in mind so each advancing page's style follows the previous.
 ### The Surface Plane
 Overall the site is responsive and scales with user screen size. 
 
-The site follows a correlating scheme or colours (Custom Purple #f75ce8, Custom Dark Purple #63055a, Cutsom Red #fcbeb3, and some bootstrap basics like primary, info and success classes ).
+The site follows a correlating scheme or colours (Custom Purple #f75ce8, Custom Blue #93bef7, Cutsom Green #c6f7a9, Custon Orange #f7ce77 and some bootstrap basics like primary, info and success classes ).
 These colours are interchanged periodically to avoid visual fatigue. 
 
 ### Existing Features
-* Header : The header's title 'A Better Puppers' is used for a home link throughout. The other navigations collapse when needed on smaller screens so as not to clutter mobile decives. 
-* Index : Presents navigation via four links which entice the eye by utilising bright colours on a white background. The welcome message changes depending on the time of the day.  
-* Excercise : Mirroring the pages beyond the index here we display facts for excercise to debunk commonly held beliefs. It also proivides and interactive guide and a push to social media via footer links.
-* Socialsation: Again the site offers some easily disgestible facts for users in need of help. We also intriduce and explore the 'Four keys' via a hideable list activated by user input.
-* Feeding Guide: Here we explore some misnomers regarding feeding/diet and present the user with an expandable guide. Interactive and informative while keeping to our succint ethos. 
-* About Us : A willing user can explore the site's creator's own story and reason for being. It comes with images from a personal library as well as redirections back to the site's pages and social medias.
-* Outside of  the 'Index and About Us' pages utilise a combination of hide and fadeIn methods in attempt to allow users take in each line of information rather than an entire page at once.
+* Header : Navigation collapse when needed on smaller screens so as not to clutter mobile decives. An active class is appled to current user pages. 
+* Index : The welcome message changes depending on the time of the day. Colourful cards are deployed to draw the users attention.   
+* Excercise : Firstly we debunk commonly held beliefs, and provide an interactive guide. Utilising Jquery for show/hide, text changes and calculations.
+* Socialsation: Again we utilise cards to organise the four keys to successful socialisation. Utilising Jquery for show/hide and text changes.
+* Feeding Guide: Mirroring the Excercise page, we debunk misnomers and provide an interctaive guide. Utilising Jquery for show/hide, text changes and calculations.
+* Contact Us : We outline our newsletter benefits and proivide a sign up form with working Email.js.
 * Footer : Links provided to fictional social medias.
 
 ### Features left to implement 
 * A large form which encompasses diet, excercise and some socialisation tricks which would take longer to fill out but may yield better user results. 
-* An email API to send users guide results, or construct a schedule for users to follow as they implement their newly acquired knowledge.
 * A shop element to utilise refferal links for equipment, toys and books reviewed and rated by our social media community. 
 
 ## Technologies used
 * HTML-For basic structure.
 * CSS-For styling and required Media Query outside of Bootstrap.
 * JavaScriprt 
+* [Email.JS](https://www.emailjs.com/)
 * [Jquery](https://jquery.com/)
 * [W3C validator](https://validator.w3.org/)-Used in testing HTML and CSS.
 * [JsHINT](https://jshint.com)-Used for Java Script validation.
@@ -122,11 +121,11 @@ These colours are interchanged periodically to avoid visual fatigue.
 #### Manual Testing
 * Header Links
     *  Header links are housed in a BootStrap Nav Collasable Bar on each page.
-        *  A Better Puppers (home button) is in-active on the index page only. 
+        *  Home
         *  Excercise Guide
         *  Socialsation (The Four Keys)
         *  Feeding Guide
-        *  About Us
+        *  Contact Us
     * _All links when selected lead to the assigned pages._
 
 * Footer Links
@@ -138,11 +137,11 @@ These colours are interchanged periodically to avoid visual fatigue.
     * _All links open in a new tab as expected._
 
 * Index Page
-    * Contains four internal links mirroring the options available from the navigation bar.
+    * Contains eight internal links mirroring the options available from the navigation bar.
         *  Diet
         *  Excercise
         *  Socialsation
-        *  About Us
+        *  Contact Us
     * _The links when selected navigates the user to the intended pages._
 
   
@@ -151,12 +150,13 @@ These colours are interchanged periodically to avoid visual fatigue.
 * Guides / Forms are found on both the Excercise Guide page and the Feeding Guide page. 
     * Exercise Guide
         * The Gender, and Neutered inputs are optional, though both create response based messages when selected.
-        * For Example 'Oh who's a good boy !' if male is selected. (Text colour changes via AddClass methods based on gender)
+        * For Example on the Feeding Guide 'Oh who's a good boy !' appears if male is selected. (Text colour changes via AddClass methods based on gender)
         * A selected Gender also shows a hidden input requesting the pet's name. Once populated the following questions are populated with the inputted name.
         * If a Neutered option is selected it creates two messages (coloured again depending on selection)
         * The first appears under the Neutered option. The second appears only once a weight option is selected.
         * The weight input is required for any output in the final line. Upon selection it populates the final output with a custom response based on input in the form of minutes per day.
-        * Resseting Gender and Neutered to the 'make selection' options removes generated messages and the name option input box, but does not clear any previously inputted name. 
+        * Resseting Gender and Neutered to the 'make selection' options removes generated messages and the name option input box, but does not clear any previously inputted name.
+        * The reset button removes all entries and added classes. 
         * The Neutered option also influences the Final output by reducing the minutes needed by 10%. A message further conveys this to the user. 
     * Feeding Guide
         * As with the excercise guide both Gender and Neutered options are not required for calculations, but both create custom messages, while only gender may influence the final output by 10% up or down.
@@ -172,14 +172,15 @@ These colours are interchanged periodically to avoid visual fatigue.
 I used Google Chrome's Responsive Viewer found [here](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb).
 The following are exerts from three tests.
 
-##### Test @ 320 x 635
-![300*576](Assets/Images/screenshots/300x576.png)
+##### Test @ 300 x 576
+[300*576](screenshots/responsive300x576.png)
+![300*576](screenshots/responsive300x576.png)
 
 ##### Test @ 320 x 635
-![320*635](Assets/Images/screenshots/320x635.png)
+![320*635](assets/images/screenshots/320x635.png)
 
 ##### Test @ 1024 x 800
-![1024*800](Assets/Images/screenshots/1024x800.png)
+![1024*800](screenshots/1024x800.png)
 
 ### Performance
 ##### Lighthouse overall results 

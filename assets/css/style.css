@@ -16,15 +16,6 @@ body{
     font-family: 'Playfair Display', serif!important;
 }
 
-/*----------JUMBOTRON */
-
-/*.jumbotron{
-    background-color: #c6e0c1;
-    margin: 0;
-    padding: 0;
-
-}*/
-
 .jumboBG{
     background-image: url('../images/bgImage.jpg');
     background-position: center;
@@ -38,7 +29,6 @@ body{
     max-width: 1024px;
     height: 100%;
     margin-bottom: 10px;
-    
 
 }
 
@@ -51,9 +41,7 @@ body{
    
 }
 
-
 /*------------------------------------------------------------------------------FONTS (SIZES / COLOURS / THEMES / BORDERS)*/
-
 
 /*-----Card Backgrounds & Buttons*/
 .no-gutters {
@@ -90,7 +78,17 @@ body{
     font-weight: bold;
 }
 
-.underline, .active{
+.underline a{
+    color: black;
+}
+
+.underline a:hover{
+    text-decoration: none;
+    color: rgb(71, 212, 78);
+    font-weight: 900;
+}
+
+.active, .underline{
     border-bottom: 3px solid rgb(71, 212, 78);
 }
 
