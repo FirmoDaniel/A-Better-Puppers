@@ -92,7 +92,7 @@ These colours are interchanged periodically to avoid visual fatigue.
 * Excercise : Firstly we debunk commonly held beliefs, and provide an interactive guide. Utilising Jquery for show/hide, text changes and calculations.
 * Socialsation: Again we utilise cards to organise the four keys to successful socialisation. Utilising Jquery for show/hide and text changes.
 * Feeding Guide: Mirroring the Excercise page, we debunk misnomers and provide an interctaive guide. Utilising Jquery for show/hide, text changes and calculations.
-* Contact Us : We outline our newsletter benefits and proivide a sign up form with working Email.js.
+* Contact Us : We outline our newsletter benefits and proivide a sign up form with working Email.js, and Modal to verify message sent. 
 * Footer : Links provided to fictional social medias.
 
 ### Features left to implement 
@@ -144,7 +144,12 @@ These colours are interchanged periodically to avoid visual fatigue.
         *  Contact Us
     * _The links when selected navigates the user to the intended pages._
 
-  
+### Contact form   
+#### On submission
+
+* [From Site](screenshots/emailJS_from_site.png)
+* [From Gmail](screenshots/emailJS_from_gmail.png)
+
 ### Guides / Forms
 #### Manual Testing
 * Guides / Forms are found on both the Excercise Guide page and the Feeding Guide page. 

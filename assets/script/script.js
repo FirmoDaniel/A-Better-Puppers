@@ -300,5 +300,11 @@ $(document).ready(function(){
         }
     });
 
+//**************************************** Contact Us
+
+    //Close Modal
+    $("#closeModal").on("click", function(){
+        $(".modal").hide();
+    });
 
 });
