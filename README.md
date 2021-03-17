@@ -165,7 +165,6 @@ These colours are interchanged periodically to avoid visual fatigue.
         * Food bag size, and current protein range, as well as weight, are both required to populate the Final output.
         * Populating just bag size, or just protein range, or both will not generate any output. A weight selection is needed. 
         * Populating a weight selction, and either bag size OR protein range will not generate a final output. 
-    * Given the small number of options on both guides there are no prompts to users to populate all selections. 
 
 ### Responsiveness
 #### Screen sizes
@@ -174,24 +173,24 @@ The following are exerts from three tests.
 
 ##### Test @ 300 x 576
 [300*576](screenshots/responsive300x576.png)
-![300*576](screenshots/responsive300x576.png)
+
 
 ##### Test @ 320 x 635
-![320*635](assets/images/screenshots/320x635.png)
+[320*635](screenshots/responsive320x635.png)
 
 ##### Test @ 1024 x 800
-![1024*800](screenshots/1024x800.png)
+[1024*800](screenshots/responsive1024x800.png)
 
 ### Performance
 ##### Lighthouse overall results 
 
 | Page    | Performance  | Accessibility  | Best Practise  | Seo |
 |---|---|---|---|---|
-| Index  | 99  | 96  | 100  | 89  |
-| Exercise Guide| 99  | 96  | 100  | 89  |
-| Socialsation | 93  | 92  | 95  | 93  |
-| Feeding Guide | 98  | 96  | 100  | 89  |
-| About Us | 96  | 97  | 100  | 90 |
+| Index  | 93  | 93  | 100  | 90  |
+| Exercise Guide| 94  | 96  | 100  | 78  |
+| Socialsation | 93  | 93  | 100  | 78  |
+| Feeding Guide | 93  | 96  | 100  | 78  |
+| Contact Us | 93  | 84  | 100  | 89 |
 
 _Note_: Lighthouse proposed other fixes but most were beyond my capability. 
 
@@ -245,6 +244,6 @@ To deploy this page from the [GitHub respository](https://github.com/FirmoDaniel
     * [Link for diet text](https://pets.webmd.com/dogs/guide/diet-nutrition)
 
 ### Media
-* All images were taken from personal library.
-
+* [Background Image](https://images.unsplash.com/photo-1583512603805-3cc6b41f3edb?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHw%3D&auto=format&fit=crop&w=500&q=60)
+* [Index:German Shepherd](https://images.unsplash.com/photo-1555573710-118d1049ed07?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTZ8fGdlcm1hbiUyMHNoZXBoZXJkJTIwZG9nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60)
 
