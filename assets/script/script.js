@@ -45,10 +45,10 @@ $(document).ready(function(){
             $("#dpn").hide();
             //NOTE: tried resetting name value (#pName) to 0 on click to avoid adding the below commands.
             $("#weightName").text(`How much does your puppers weigh? `);
-            $("#basedOnInputsoFar").text(`Base on your input so far, your pupper's daily protein needs are : `);
+            $("#basedOnInputsoFar").text(`Based on your input so far, your pupper's daily protein needs are : `);
             $("#etInputSoFar").text(`Using your input so far, your pupper's daily excercise needs are :`);
             $("#neuteredGivenName").text(`Is your puppers neutered? `);
-            $("#givenNameFinal").text(`Looks your puppers will need : `);
+            $("#givenNameFinal").text(`Looks like your puppers will need : `);
             $("#bagName").text(`How big is your pupper's food bag? `);
             $("#proteinRangeName").text(`What's the protein range of your pupper's food? `);
         });
@@ -60,7 +60,7 @@ $(document).ready(function(){
         if(givenName.length > 0){
             $("#basedOnInputsoFar").text(`Based on your input so far, `+ givenName +`'s daily protein needs are : `);
         }else{
-            $("#basedOnInputsoFar").text(`Base on your input so far, your pupper's daily protein needs are : `);
+            $("#basedOnInputsoFar").text(`Based on your input so far, your pupper's daily protein needs are : `);
         }
 
         if(givenName.length > 0){
@@ -70,21 +70,21 @@ $(document).ready(function(){
         }
 
         if(givenName.length > 0){
-            $("#neuteredGivenName").text(`Is `+ givenName + ` neutered ? `);
+            $("#neuteredGivenName").text(`Is `+ givenName + ` neutered? `);
         }else{
-            $("#neuteredGivenName").text(`Is your Puppers neutered ? `);
+            $("#neuteredGivenName").text(`Is your puppers neutered? `);
         }
 
         if(givenName.length > 0){
             $("#givenNameFinal").text(`Looks like `+ givenName + ` will need : `);
         }else{
-            $("#givenNameFinal").text(`Looks your puppers will need : `);
+            $("#givenNameFinal").text(`Looks like your puppers will need : `);
         }
 
         if(givenName.length > 0){
-            $("#weightName").text(`How much does `+ givenName + ` weigh ? `);
+            $("#weightName").text(`How much does `+ givenName + ` weigh? `);
         }else{
-            $("#weightName").text(`How much does your puppers weigh ? `);
+            $("#weightName").text(`How much does your puppers weigh? `);
         }
 
         if(givenName.length > 0){

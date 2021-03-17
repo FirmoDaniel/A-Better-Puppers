@@ -68,28 +68,28 @@
     <div class="container">
         <form id="guide" class="bg-warning" autocomplete="off">
             <!-- GENDER-->
-            <div class="form-group col-sm-6 offset-1,1">
-            <label for="gender">Gender </label>
-            <div class="input-container">
-                <select id="gender" class=" form-control genderOptions neuteredOptions" name="gender">
-                    <option id="noChoiceGender" value="0"> Make Selection </option>
-                    <option id ="male" value="1.1" >Male</option>
-                    <option id="female" value=".9" >Female</option>
-                </select>           
-            </div>
-            <small id="genderMsg"></small>           
-            <div id="hideShowGender" class="form-group">
-                <br>
-                <label id="pNameQuestion"></label>
+            <div class="form-group col-10 justify-content-center offset-md-1 offset-sm-0">
+                <label for="gender">Gender </label>
                 <div class="input-container">
-                    <!--input type text not working, box accepting numbers!-->
-                    <input class="form-control" type="text" id="pName" name="pets_name">
+                    <select id="gender" class=" form-control genderOptions neuteredOptions" name="gender">
+                        <option id="noChoiceGender" value="0"> Make Selection </option>
+                        <option id ="male" value="1.1" >Male</option>
+                        <option id="female" value=".9" >Female</option>
+                    </select>           
                 </div>
-            </div>
+                <small id="genderMsg"></small>           
+                <div id="hideShowGender" class="form-group">
+                    <br>
+                    <label id="pNameQuestion"></label>
+                    <div class="input-container">
+                        <!--input type text not working, box accepting numbers!-->
+                        <input class="form-control" type="text" id="pName" name="pets_name">
+                    </div>
+                </div>
             </div>           
             <!-- Neutered  HAS THREE CLASSES-->
-            <div class="form-group col-sm-6 offset-1,1">         
-                <label id="neuteredGivenName" for="neutered"> Is your puppers Neutered? </label>
+            <div class="form-group col-10 justify-content-center offset-md-1 offset-sm-0">         
+                <label id="neuteredGivenName" for="neutered"> Is your puppers neutered? </label>
                 <div class="input-container">
                     <select id="neutered" class="form-control neuteredOptions weightOptions proteinOptions" name="neutered">
                         <option id="noChoiceNeutered" value=""> Make Selection </option>
@@ -100,8 +100,8 @@
                 <small id="neuteredMsg"></small>
             </div>
             <!-- Weight-->
-            <div class="form-group col-sm-6 offset-1,1">            
-                <label id="weightName" class="name" for="weight">How much does you puppers weigh? </label>
+            <div class="form-group col-10 justify-content-center offset-md-1 offset-sm-0">            
+                <label id="weightName" class="name" for="weight">How much does your puppers weigh? </label>
                 <div class="input-container">
                     <select id="weight" class="form-control weightOptions proteinOptions" name="weight">
                         <option id="noChoiceWeight" value="0"> Make Selection </option>
@@ -114,15 +114,15 @@
                 <small id="weightmsg"></small>
             </div>
             <!--WEIGHT CALCS-->
-            <div class="form-group col-sm-6 offset-1,1">
-                <label id="basedOnInputsoFar" for="weight2">Using your input so far, your pupper's daily protein needs are : </label>
+            <div class="form-group col-10 justify-content-center offset-md-1 offset-sm-0">
+                <label id="basedOnInputsoFar" for="weight2">Based on your input so far, your pupper's daily protein needs are : </label>
                 <div class="input-container">
                     <input class="form-control" id="weight2" type="text" name="weight2" placeholder="0 %" readonly>
                 </div>
                 <small id="dpn"></small>
             </div>
             <!--BAG CALCS-->
-            <div class="form-group col-sm-6 offset-1,1">
+            <div class="form-group col-10 justify-content-center offset-md-1 offset-sm-0">
                 <label id="bagName">How big is your pupper's food bag ?</label>
                 <div class="input-container">
                     <select id="weight3" class="form-control proteinOptions" name="weight">
@@ -136,7 +136,7 @@
                 </div>
             </div>
             <!--PROTEIN CALCS-->
-            <div class="form-group col-sm-6 offset-1,1">
+            <div class="form-group col-10 justify-content-center offset-md-1 offset-sm-0">
                 <label id="proteinRangeName">What's the protein range of your pupper's food ? </label>
                 <div class="input-container">
                     <select id="weight4" class=" form-control proteinOptions" name="weight">
@@ -150,7 +150,7 @@
                 </div>
             </div>
             <!--Grams per day-->
-            <div class="form-group col-sm-6 offset-1,1">
+            <div class="form-group col-10 justify-content-center offset-md-1 offset-sm-0">
                 <label id= "givenNameFinal" for="weight5">Looks like your puppers will need :  </label>
                 <div class="input-container">
                     <input class="form-control" id="weight5" type="text" name="gramsPerDay" readonly>
@@ -161,7 +161,9 @@
                 <button type="reset" id="formReset" class="btn btn-primary mb-2">Reset</button>
             </div>
         </form>
-        <br>
+        <br>        
+    </div>
+    <div class="container">
         <button class ="btn btn-success" id="showGuide">Show Guide</button>
     </div>
     <br>
