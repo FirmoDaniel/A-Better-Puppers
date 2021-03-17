@@ -18,29 +18,21 @@ $(document).ready(function(){
 
     $(".welcome").prepend(greeting);
 
-
-//**************************************** FEEDING GUIDE
     // Global variables
-
     let gend, neutCheck, proteinNeeds2, dpnString, weightString, exe2, dpnString2;
-
-
-       /*(unsure where this is used)>>if(exe2 > 0){
-            $("#exeFinalMsg").show();
-        }else{
-            $("#exeFinalMsg").hide();
-        }*/
-    
-    
+  
+    // Hide / Show Guides
         $("#guide").hide();
         $("#hideShowGender").hide();
     
         $("#showGuide").on("click", function(){
             $("#guide").toggle();
-        });
-
-        $("#socialGuide").on("click", function(){
-            $("#guide").toggle();
+            if($(this).text() === "Show Guide"){
+            $(this).text("Close Guide");
+        }
+        else{
+            $(this).text("Show Guide");
+        }
         });
 
     // Reset forms       
@@ -49,6 +41,8 @@ $(document).ready(function(){
             $("#hideShowGender").hide();
             $("#et").hide();
             $("#neuteredMsg").hide();
+            $("#weightmsg").hide();
+            $("#dpn").hide();
             //NOTE: tried resetting name value (#pName) to 0 on click to avoid adding the below commands.
             $("#weightName").text(`How much does your puppers weigh? `);
             $("#basedOnInputsoFar").text(`Base on your input so far, your pupper's daily protein needs are : `);
@@ -57,7 +51,6 @@ $(document).ready(function(){
             $("#givenNameFinal").text(`Looks your puppers will need : `);
             $("#bagName").text(`How big is your pupper's food bag? `);
             $("#proteinRangeName").text(`What's the protein range of your pupper's food? `);
-            $("#onOff").text(`Is your puppers walked on or off leash ? `); //ARE WE USING THIS ???
         });
 
     // Updating pet name
@@ -105,11 +98,6 @@ $(document).ready(function(){
         }else{
             $("#proteinRangeName").text(`What's the protein range of your pupper's food ? `);
         }
-        if(givenName.length > 0){
-            $("#onOff").text(`Is `+ givenName + ` walked on or off leash ? `);
-        }else{
-            $("#onOff").text(`Is your puppers walked on or off leash ? `);
-        }
     }); 
 
     // GENDER SCRIPT
@@ -144,23 +132,22 @@ $(document).ready(function(){
         let neutmsg, neut;
         neut =$(' #neutered option:selected ').attr("id");
         gend =$(' #gender option:selected ').attr("id");
-        
-        
+           
         if(neut === "noChoiceNeutered"){
         neutmsg = " ";
-        $("#neuteredMsg").removeClass().addClass("neuteredOptions");
+        $("#neuteredMsg").removeClass().addClass("neuteredOptions").show();
         } else if(neut === "yesNeutered" && gend === "male"){
             neutmsg = `It's much healthier for him.`;
-            $("#neuteredMsg").removeClass().addClass("blue");
+            $("#neuteredMsg").removeClass().addClass("blue").show();
         }else if(neut === "yesNeutered" && gend === "female"){
             neutmsg = `It's much better for her.`;
-            $("#neuteredMsg").removeClass().addClass("customPurpleDark");
+            $("#neuteredMsg").removeClass().addClass("customPurpleDark").show();
         }else if (neut === "yesNeutered"){
             neutmsg = `Great Stuff, it's much better for them.`; 
-            $("#neuteredMsg").removeClass().addClass("green");
+            $("#neuteredMsg").removeClass().addClass("green").show();
         }else if (neut === "noNeutered"){
             neutmsg = "You should really consider neutering.";
-            $("#neuteredMsg").removeClass().addClass("red");
+            $("#neuteredMsg").removeClass().addClass("red").show();
         }else { 
             neutmsg = "Not working ";
             
@@ -203,15 +190,14 @@ $(document).ready(function(){
         neutCheck = $(' #neutered option:selected ').attr("id");
         dpnString= $("#weight2").val().length;
         
-
         if(neutCheck === "yesNeutered" && dpnString > 0 && proteinNeeds1 > 0 ){
             proteinNeeds2 = (parseFloat(proteinNeeds1) * .9);
             dpnMsg = ` (Neutering decreases food by 10% ! )`;
-            $("#dpn").removeClass().addClass("green");
+            $("#dpn").removeClass().addClass("green").show();
         }else if(neutCheck === "noNeutered" && dpnString > 0 && proteinNeeds1 > 0 ){
             proteinNeeds2 = parseFloat(proteinNeeds1) ;
             dpnMsg = ` (Neutering would reduce food by 10% ! )`;
-            $("#dpn").removeClass().addClass("red");
+            $("#dpn").removeClass().addClass("red").show();
         }else{
             proteinNeeds2 = parseFloat(proteinNeeds1);
             dpnMsg = " ";
@@ -239,46 +225,101 @@ $(document).ready(function(){
             needsTotalMsg = " ";
         }
 
-        $("#weight5").text(needsTotal + needsTotalMsg);
+        $("#weight5").val(needsTotal + needsTotalMsg);
 
     });
+
 //**************************************** EXCERCISE GUIDE
 
-//EXCERCISE TIME
-$(document).on("change", ".weightOptionsET", function(){
-    let proteinNeeds1, etMsg;
-    proteinNeeds1 = $(" #weight option:selected").val();
-    neutCheck = $(' #neutered option:selected ').attr("id");
-    dpnString2= $("#weightET").val().length;
-    
+    $(document).on("change", ".weightOptionsET", function(){
+        let proteinNeeds1, etMsg;
+        proteinNeeds1 = $(" #weight option:selected").val();
+        neutCheck = $(' #neutered option:selected ').attr("id");
+        dpnString2= $("#weightET").val().length;
+        
 
-    if(neutCheck === "yesNeutered" && dpnString2 > 0 && proteinNeeds1 > 0 ){
-        exe2 = (parseFloat(proteinNeeds1) * .9);
-        etMsg = ` (Neutering has decreased excercise by 10% ! )`;
-        $("#et").removeClass().addClass("green");
-    }else if(neutCheck === "noNeutered" && dpnString2 > 0 && proteinNeeds1 > 0 ){
-        exe2 = parseFloat(proteinNeeds1) ;
-        etMsg = ` (Neutering would reduce excercise by 10% ! )`;
-        $("#et").removeClass().addClass("red");
-    }else{
-        exe2 = parseFloat(proteinNeeds1);
-        etMsg = " ";
-        $("#et").removeClass();
-    }
+        if(neutCheck === "yesNeutered" && dpnString2 > 0 && proteinNeeds1 > 0 ){
+            exe2 = (parseFloat(proteinNeeds1) * .9);
+            etMsg = ` (Neutering has decreased excercise by 10% ! )`;
+            $("#et").removeClass().addClass("green");
+        }else if(neutCheck === "noNeutered" && dpnString2 > 0 && proteinNeeds1 > 0 ){
+            exe2 = parseFloat(proteinNeeds1) ;
+            etMsg = ` (Neutering would reduce excercise by 10% ! )`;
+            $("#et").removeClass().addClass("red");
+        }else{
+            exe2 = parseFloat(proteinNeeds1);
+            etMsg = " ";
+            $("#et").removeClass();
+        }
 
-    $("#weightET").val( exe2 + ` mins twice per day`);
-    $("#et").text(etMsg);
+        $("#weightET").val( exe2 + ` mins twice per day`);
+        $("#et").text(etMsg);
 
-});
+    });
+
+//**************************************** Socialisation Page
+    $(".hideSocialCard").hide();
+
+    $("#cardTextHideButtonOne").on("click", function(){
+        $("#cardTextHideOne").toggle();
+        if($(this).text() === "Explore"){
+            $(this).text("Close");
+        }
+        else{
+            $(this).text("Explore");
+        }
+    });
+
+    $("#cardTextHideButtonTwo").on("click", function(){
+        $("#cardTextHideTwo").toggle();
+        if($(this).text() === "Explore"){
+            $(this).text("Close");
+        }
+        else{
+            $(this).text("Explore");
+        }
+    });
+
+    $("#cardTextHideButtonThree").on("click", function(){
+        $("#cardTextHideThree").toggle();
+        if($(this).text() === "Explore"){
+            $(this).text("Close");
+        }
+        else{
+            $(this).text("Explore");
+        }
+    });
+
+    $("#cardTextHideButtonFour").on("click", function(){
+        $("#cardTextHideFour").toggle();
+        if($(this).text() === "Explore"){
+            $(this).text("Close");
+        }
+        else{
+            $(this).text("Explore");
+        }
+    });
+
+
+    /*$("#cardTextHideButtonFour" || "#cardTextHideButtonThree" || "#cardTextHideButtonTwo" || "#cardTextHideButtonOne" ).on("click",function(){
+        if($(this).text() === "Explore"){
+            $(this).text("Close");
+        }
+        else{
+            $(this).text("Explore");
+        }
+    });*/
+
+
 
 //******************************* CONTACT FORM
 
 
-//clear form
- $("#SubmitButton").on("blur", function(){
-     $('#contactForm').find("input[type=text]").val("");
-     $('#contactForm').find("input[type=email]").val("");
- });
+    //clear form
+    $("#SubmitButton").on("blur", function(){
+        $('#contactForm').find("input[type=text]").val("");
+        $('#contactForm').find("input[type=email]").val("");
+    });
 
 
 });
