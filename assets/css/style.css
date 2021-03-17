@@ -18,12 +18,12 @@ body{
 
 /*----------JUMBOTRON */
 
-.jumbotron{
+/*.jumbotron{
     background-color: #c6e0c1;
     margin: 0;
     padding: 0;
 
-}
+}*/
 
 .jumboBG{
     background-image: url('../images/bgImage.jpg');
@@ -50,8 +50,6 @@ body{
   font-weight: 700;
    
 }
-
-
 
 
 /*------------------------------------------------------------------------------FONTS (SIZES / COLOURS / THEMES / BORDERS)*/
