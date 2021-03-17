@@ -191,7 +191,7 @@ $(document).ready(function(){
         dpnString= $("#weight2").val().length;
         
         if(neutCheck === "yesNeutered" && dpnString > 0 && proteinNeeds1 > 0 ){
-            proteinNeeds2 = (parseFloat(proteinNeeds1) * .9);
+            proteinNeeds2 = (parseFloat(proteinNeeds1) * 0.9);
             dpnMsg = ` (Neutering decreases food by 10% ! )`;
             $("#dpn").removeClass().addClass("green").show();
         }else if(neutCheck === "noNeutered" && dpnString > 0 && proteinNeeds1 > 0 ){
@@ -239,7 +239,7 @@ $(document).ready(function(){
         
 
         if(neutCheck === "yesNeutered" && dpnString2 > 0 && proteinNeeds1 > 0 ){
-            exe2 = (parseFloat(proteinNeeds1) * .9);
+            exe2 = (parseFloat(proteinNeeds1) * 0.9);
             etMsg = ` (Neutering has decreased excercise by 10% ! )`;
             $("#et").removeClass().addClass("green");
         }else if(neutCheck === "noNeutered" && dpnString2 > 0 && proteinNeeds1 > 0 ){

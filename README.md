@@ -217,8 +217,7 @@ Using [W3C validator](https://validator.w3.org/) both HTML and CSS were checked 
 </p>
 
 Using [JShint](https://jshint.com)
-* First run showed 51 warnings
-* Second run showed 46 warnings relating to the use of 'let' to declare variables and the use of template literal's for older versions. The script was not amended to address these, as I wasn't sure how relevant the warnings were.
+* Warnings relating to the use of 'let' to declare variables and the use of template literal's for older versions. The script was not amended to address these, as I wasn't sure how relevant the warnings were.
 
 ## Deployment
 The project was developed using [GitPod](https://www.gitpod.io/) workspace, committed to git and pushed to [GitHub](https://github.com) using the built in function within Gitpod.
